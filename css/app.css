@@ -10620,8 +10620,62 @@ textarea.form-control-lg {
   }
 }
 body {
-  background: #8a2525;
-  color: #1b4a91;
+  font-family: "Montserrat", sans-serif;
+  background: #dddddd;
+}
+
+.navbar {
+  font-family: "Montserrat", sans-serif;
+}
+.navbar #logo {
+  width: 204px;
+  height: auto;
+  margin-left: 2rem;
+}
+.navbar .navbar-nav {
+  margin-left: 15rem;
+}
+.navbar .navbar-collapse {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.navbar .nav-link:hover {
+  transition: border 0.3s ease-in-out 0.1s;
+  border-bottom: 2.5px solid #ec4646;
+}
+.navbar .active {
+  transition: border 0.3s ease-in-out 1s;
+  border-bottom: 2.5px solid #ec4646;
+}
+.navbar .dropdown-menu {
+  text-transform: none;
+}
+.navbar #nav-icons {
+  margin-left: 12rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.navbar .notification {
+  position: relative;
+}
+.navbar .notification:hover {
+  cursor: pointer;
+}
+.navbar .tip {
+  position: absolute;
+  left: 15px;
+  top: -9px;
+  height: 18px;
+  width: 18px;
+  background: red;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=app.css.map */
