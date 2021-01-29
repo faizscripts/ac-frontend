@@ -6,7 +6,6 @@ $red: #ec4646;
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #dddddd;
 }
 
 .navbar {
@@ -44,7 +43,7 @@ body {
 
   #nav-icons {
     margin-left: 12rem;
-    margin-right: 1rem;
+    margin-right: 0;
     margin-top: 1rem;
     font-size: 1.2rem;
   }
@@ -74,6 +73,21 @@ body {
     border-radius: 50%;
   }
 }
+
+
+#tiles {
+
+  .card{
+    text-transform: uppercase;
+  }
+
+  .card-tile{
+    height: 13rem;
+    object-fit: cover;
+  }
+
+}
+
 
 
 
@@ -122,8 +136,8 @@ body {
     }
 
     .navbar-nav {
-      margin-left: 0rem;
-      margin-top: 0rem;
+      margin-left: 0;
+      margin-top: 0;
     }
 
     .nav-link:hover {
