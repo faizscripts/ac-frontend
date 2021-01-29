@@ -24,7 +24,7 @@ body {
 
   .navbar-collapse {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   .nav-link:hover {
@@ -81,9 +81,14 @@ body {
     text-transform: uppercase;
   }
 
-  .card-tile{
-    height: 13rem;
+  .image-tile{
+    height: 11rem;
     object-fit: cover;
+  }
+
+  .card-footer{
+    font-size: 0.9rem;
+    font-weight: 800;
   }
 
 }
@@ -121,6 +126,7 @@ body {
 
   }
 
+
 }
 
 
@@ -136,6 +142,7 @@ body {
     }
 
     .navbar-nav {
+      text-transform: initial;
       margin-left: 0;
       margin-top: 0;
     }
@@ -155,6 +162,41 @@ body {
     }
 
   }
+
+  #tiles{
+    .card-footer{
+      text-transform: initial;
+    }
+  }
+}
+
+
+// xs and sm
+@media (max-width: 576px) {
+  .navbar{
+    font-size: 0.75rem;
+
+    .dropdown-menu{
+      font-size: 0.70rem;
+    }
+
+    #search-nav{
+      font-size: 0.70rem;
+    }
+  }
+
+  #tiles{
+    .image-tile{
+      height: 5rem;
+    }
+
+    .card-footer{
+      font-size: 0.5rem;
+      font-weight: 800;
+      text-transform: initial;
+    }
+  }
+  
 }
 
 
