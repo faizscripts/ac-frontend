@@ -10634,6 +10634,7 @@ body {
 }
 .navbar .navbar-nav {
   margin-left: 15rem;
+  margin-top: 1rem;
 }
 .navbar .navbar-collapse {
   text-transform: uppercase;
@@ -10676,6 +10677,46 @@ body {
   line-height: 18px;
   text-align: center;
   border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .navbar #logo {
+    width: 155px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  .navbar .navbar-nav {
+    margin-left: 7rem;
+    margin-top: 1rem;
+  }
+  .navbar #nav-icons {
+    margin-left: 2rem;
+    margin-right: -1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .navbar #logo {
+    width: 125px;
+    height: auto;
+    margin-left: 2rem;
+  }
+  .navbar .navbar-nav {
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+  .navbar .nav-link:hover {
+    border-bottom: none;
+  }
+  .navbar .active {
+    border-bottom: none;
+  }
+  .navbar #nav-icons {
+    margin-left: 0;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
