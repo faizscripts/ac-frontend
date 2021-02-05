@@ -2,7 +2,7 @@
 // font-family: 'Barlow Condensed', sans-serif;
 
 $yellow: #ffe227;
-$red: #ca1515;
+$red: #FF0000;
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -68,7 +68,7 @@ body {
     top: -9px;
     height: 18px;
     width: 18px;
-    background: red;
+    background: $red;
     font-style: normal;
     font-size: 10px;
     font-weight: 700;
@@ -134,7 +134,6 @@ body {
   }
 
   .card-title{
-    text-transform: initial;
     font-size: 0.75rem;
     font-weight: bold;
     overflow: hidden;
@@ -142,6 +141,7 @@ body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
   }
+
 
   .card-text{
     font-size: 0.8rem;

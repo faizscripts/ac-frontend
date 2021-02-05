@@ -24,11 +24,11 @@ body {
 }
 .navbar .nav-link:hover {
   transition: border 0.3s ease-in-out 0.1s;
-  border-bottom: 2.5px solid #ca1515;
+  border-bottom: 2.5px solid #FF0000;
 }
 .navbar .active {
   transition: border 0.3s ease-in-out 1s;
-  border-bottom: 2.5px solid #ca1515;
+  border-bottom: 2.5px solid #FF0000;
 }
 .navbar .dropdown-menu {
   text-transform: none;
@@ -51,7 +51,7 @@ body {
   top: -9px;
   height: 18px;
   width: 18px;
-  background: red;
+  background: #FF0000;
   font-style: normal;
   font-size: 10px;
   font-weight: 700;
@@ -93,20 +93,19 @@ body {
   bottom: -4px;
   height: 2px;
   width: 70px;
-  background: #ca1515;
+  background: #FF0000;
   content: "";
 }
 .featured .see-all {
   display: inline-block;
   float: right;
-  background: #ca1515;
+  background: #FF0000;
   color: white;
 }
 .featured .card-body {
   padding: 0.5rem;
 }
 .featured .card-title {
-  text-transform: initial;
   font-size: 0.75rem;
   font-weight: bold;
   overflow: hidden;
@@ -121,7 +120,7 @@ body {
 .featured span {
   margin-left: 0.2rem;
   font-weight: normal;
-  text-decoration: line-through #ca1515;
+  text-decoration: line-through #FF0000;
 }
 .featured .action {
   display: flex;
