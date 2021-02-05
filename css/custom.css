@@ -2,16 +2,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.card:hover {
+  cursor: pointer;
+}
+
 .navbar {
   font-family: "Montserrat", sans-serif;
 }
 .navbar #logo {
-  width: 204px;
+  width: 155px;
   height: auto;
   margin-left: 2rem;
 }
 .navbar .navbar-nav {
-  margin-left: 15rem;
+  margin-left: 17rem;
   margin-top: 1rem;
 }
 .navbar .navbar-collapse {
@@ -20,11 +24,11 @@ body {
 }
 .navbar .nav-link:hover {
   transition: border 0.3s ease-in-out 0.1s;
-  border-bottom: 2.5px solid #ec4646;
+  border-bottom: 2.5px solid #ca1515;
 }
 .navbar .active {
   transition: border 0.3s ease-in-out 1s;
-  border-bottom: 2.5px solid #ec4646;
+  border-bottom: 2.5px solid #ca1515;
 }
 .navbar .dropdown-menu {
   text-transform: none;
@@ -57,6 +61,9 @@ body {
   border-radius: 50%;
 }
 
+#tiles {
+  margin-top: 5rem;
+}
 #tiles .card {
   text-transform: uppercase;
 }
@@ -69,24 +76,108 @@ body {
   font-weight: 800;
 }
 
-@media (max-width: 1200px) {
+.featured {
+  margin-top: 3rem;
+}
+.featured .section-title {
+  margin-bottom: 2rem;
+  color: #111111;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+.featured .section-title:after {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 70px;
+  background: #ca1515;
+  content: "";
+}
+.featured .see-all {
+  display: inline-block;
+  float: right;
+  background: #ca1515;
+  color: white;
+}
+.featured .card-body {
+  padding: 0.5rem;
+}
+.featured .card-title {
+  text-transform: initial;
+  font-size: 0.75rem;
+  font-weight: bold;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.featured .card-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.featured span {
+  margin-left: 0.2rem;
+  font-weight: normal;
+  text-decoration: line-through #ca1515;
+}
+.featured .action {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1345px) {
   .navbar #logo {
-    width: 155px;
+    width: 130px;
     height: auto;
     margin-left: 1rem;
   }
   .navbar .navbar-nav {
-    margin-left: 7rem;
+    margin-left: 12rem;
     margin-top: 1rem;
   }
   .navbar #nav-icons {
-    margin-left: 2rem;
-    margin-right: -1rem;
+    margin-left: 8rem;
+    margin-right: -2rem;
     margin-top: 1rem;
     font-size: 1.2rem;
   }
+  .navbar #search-nav {
+    font-size: 0.8rem;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 1150px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .navbar #logo {
+    width: 130px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  .navbar .navbar-nav {
+    margin-left: 10rem;
+    margin-top: 1rem;
+  }
+  .navbar #nav-icons {
+    margin-left: 4rem;
+    margin-right: -2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .navbar #search-nav {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 991px) {
+  body {
+    font-size: 0.85rem;
+  }
+
   .navbar #logo {
     width: 125px;
     height: auto;
@@ -105,8 +196,12 @@ body {
   }
   .navbar #nav-icons {
     margin-left: 0;
+    margin-right: 0;
     margin-top: 1rem;
     font-size: 1.2rem;
+  }
+  .navbar #search-nav {
+    font-size: 0.8rem;
   }
 
   #tiles .card-footer {
@@ -114,9 +209,10 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .navbar {
-    font-size: 0.75rem;
+  body {
+    font-size: 0.7rem;
   }
+
   .navbar .dropdown-menu {
     font-size: 0.7rem;
   }
@@ -124,6 +220,9 @@ body {
     font-size: 0.7rem;
   }
 
+  #tiles {
+    margin-top: 4rem;
+  }
   #tiles .image-tile {
     height: 5rem;
   }
