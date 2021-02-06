@@ -185,6 +185,28 @@
       text-transform: initial;
     }
   }
+
+  #why{
+    margin-top: 1rem;
+
+    .why-title {
+      margin-bottom: -1rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    .row{
+      font-weight: 600;
+    }
+
+    i{
+      font-size: 2.5rem;
+    }
+
+    p{
+      font-size: 0.65rem;
+    }
+
+  }
 }
 
 

@@ -287,6 +287,24 @@ body {
   #tiles .card-footer {
     text-transform: initial;
   }
+
+  #why {
+    margin-top: 1rem;
+  }
+  #why .why-title {
+    margin-bottom: -1rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  #why .row {
+    font-weight: 600;
+  }
+  #why i {
+    font-size: 2.5rem;
+  }
+  #why p {
+    font-size: 0.65rem;
+  }
 }
 @media (max-width: 575.98px) {
   body {
