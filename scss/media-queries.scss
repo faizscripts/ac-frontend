@@ -1,0 +1,263 @@
+@import "variables";
+
+// MEDIA QUERIES
+// special screen size to fix navbar responsiveness
+@media (max-width: 1345px) {
+
+  .navbar {
+
+    #logo {
+      width: 130px;
+      height: auto;
+      margin-left: 1rem;
+    }
+
+    .navbar-nav {
+      margin-left: 12rem;
+      margin-top: 1rem;
+    }
+
+    #nav-icons {
+      margin-left: 8rem;
+      margin-right: -2rem;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    #search-nav {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+//large screens
+@media (max-width: 1150px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .navbar {
+
+    #logo {
+      width: 130px;
+      height: auto;
+      margin-left: 1rem;
+    }
+
+    .navbar-nav {
+      margin-left: 10rem;
+      margin-top: 1rem;
+    }
+
+    #nav-icons {
+      margin-left: 4rem;
+      margin-right: -2rem;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    #search-nav {
+      font-size: 0.6rem;
+    }
+  }
+
+  .featured {
+    .card-title {
+      font-size: 0.7rem;
+    }
+
+    .card-text {
+      font-size: 0.7rem;
+    }
+
+    span{
+      font-size: 0.6rem;
+    }
+  }
+}
+
+// medium
+@media (max-width: 991.98px) {
+  body{
+    font-size: 0.85rem;
+  }
+
+  .navbar {
+
+    #logo {
+      width: 125px;
+      height: auto;
+      margin-left: 2rem;
+    }
+
+    .navbar-nav {
+      text-transform: initial;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .nav-link:hover {
+      border-bottom: none;
+    }
+
+    .active {
+      border-bottom: none;
+    }
+
+    #nav-icons {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    #search-nav {
+      font-size: 0.80rem;
+    }
+
+  }
+
+  .featured {
+
+    .card{
+      margin-bottom: 2rem;
+    }
+
+    .card-title {
+      font-size: 0.7rem;
+    }
+
+    .card-text {
+      font-size: 0.7rem;
+    }
+
+    span{
+      font-size: 0.6rem;
+    }
+
+  }
+}
+
+
+// small
+@media (max-width: 767.98px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  .navbar {
+
+    #logo {
+      width: 125px;
+      height: auto;
+      margin-left: 2rem;
+    }
+
+    .navbar-nav {
+      text-transform: initial;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .nav-link:hover {
+      border-bottom: none;
+    }
+
+    .active {
+      border-bottom: none;
+    }
+
+    #nav-icons {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    #search-nav {
+      font-size: 0.80rem;
+    }
+
+  }
+
+  #tiles {
+    .card-footer {
+      text-transform: initial;
+    }
+  }
+}
+
+
+// xs
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.70rem;
+  }
+
+  .navbar {
+
+    .dropdown-menu {
+      font-size: 0.70rem;
+    }
+
+    #search-nav {
+      font-size: 0.70rem;
+    }
+  }
+
+  #tiles {
+    margin-top: 4rem;
+
+    .image-tile {
+      height: 5rem;
+    }
+
+    .card-footer {
+      font-size: 0.5rem;
+      font-weight: 800;
+      text-transform: initial;
+    }
+  }
+
+  .featured {
+
+    .section-title {
+      margin-bottom: 1rem;
+      Font-size: 0.9rem;
+      text-transform: initial;
+    }
+
+    .section-title:after {
+      height: 2px;
+      width: 50px;
+    }
+
+    .see-all {
+      font-size: 0.4rem;
+      text-transform: initial;
+    }
+
+    .card{
+      margin-bottom: 1rem;
+    }
+
+    .card-title {
+      font-size: 0.4rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .card-text {
+      font-size: 0.4rem;
+    }
+
+    span{
+      font-size: 0.3rem;
+    }
+
+    .action{
+      margin-top: 0.2rem;
+      font-size: 0.6rem;
+    }
+
+  }
+}
