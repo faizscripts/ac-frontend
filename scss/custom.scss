@@ -168,5 +168,28 @@ body {
 }
 
 
+#why{
+  margin-top: 3rem;
+  background: $grey;
+
+  .why-title {
+    margin-bottom: -2rem;
+    color: #111111;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: initial;
+    display: inline-block;
+  }
+  .row{
+    font-weight: 600;
+  }
+
+  i{
+    font-size: 5rem;
+  }
+
+}
+
+
 @import "media-queries";
 

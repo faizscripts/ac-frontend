@@ -136,6 +136,25 @@ body {
   font-size: 1.5rem;
 }
 
+#why {
+  margin-top: 3rem;
+  background: #f4f4f4;
+}
+#why .why-title {
+  margin-bottom: -2rem;
+  color: #111111;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: initial;
+  display: inline-block;
+}
+#why .row {
+  font-weight: 600;
+}
+#why i {
+  font-size: 5rem;
+}
+
 @media (max-width: 1345px) {
   .navbar #logo {
     width: 130px;
