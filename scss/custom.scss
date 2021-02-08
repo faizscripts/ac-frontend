@@ -160,6 +160,12 @@ body {
     text-decoration: line-through $red;
   }
 
+  .card-img-top{
+    height: 14rem;
+    object-fit: cover;
+    object-position: center center;
+  }
+
   .action {
     display: flex;
     justify-content: space-around;

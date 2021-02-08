@@ -130,6 +130,11 @@ body {
   font-weight: normal;
   text-decoration: line-through #FF0000;
 }
+.featured .card-img-top {
+  height: 14rem;
+  object-fit: cover;
+  object-position: center center;
+}
 .featured .action {
   display: flex;
   justify-content: space-around;
@@ -205,6 +210,9 @@ body {
   .featured .card-text {
     font-size: 0.7rem;
   }
+  .featured .card-img-top {
+    height: 10rem;
+  }
   .featured span {
     font-size: 0.6rem;
   }
@@ -248,6 +256,9 @@ body {
   }
   .featured .card-text {
     font-size: 0.7rem;
+  }
+  .featured .card-img-top {
+    height: 12rem;
   }
   .featured span {
     font-size: 0.6rem;
@@ -304,6 +315,10 @@ body {
   }
   #why p {
     font-size: 0.65rem;
+  }
+
+  .featured .card-img-top {
+    height: 6rem;
   }
 }
 @media (max-width: 575.98px) {
