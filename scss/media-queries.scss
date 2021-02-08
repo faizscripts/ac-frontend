@@ -122,6 +122,40 @@
 
   }
 
+  #cart{
+    .prod-title{
+      font-size: 0.8rem;
+    }
+
+    .img-thumbnail{
+      height: 7rem;
+      width: 7rem;
+    }
+
+    .price{
+      font-weight: 600;
+    }
+
+    span{
+      font-size: 0.6rem;
+    }
+    .form-select{
+      font-size: 0.7rem;
+    }
+
+    .remove{
+      font-size: 0.7rem;
+    }
+
+    .total{
+      font-size: 1.2rem;
+    }
+
+    #checkout{
+      font-size: 0.9rem;
+    }
+  }
+
   .featured {
 
     .card{
@@ -189,6 +223,46 @@
 
   }
 
+  #cart{
+
+    .modal-title{
+      font-size: 0.7rem;
+    }
+
+    .prod-title{
+      font-size: 0.5rem;
+    }
+
+    .img-thumbnail{
+      height: 5rem;
+      width: 5rem;
+    }
+
+    .price{
+      font-size: 0.55rem;
+      font-weight: 600;
+    }
+
+    span{
+      font-size: 0.3rem;
+    }
+    .form-select{
+      font-size: 0.4rem;
+    }
+
+    .remove{
+      font-size: 0.4rem;
+    }
+
+    .total{
+      font-size: 0.9rem;
+    }
+
+    #checkout{
+      font-size: 0.6rem;
+    }
+  }
+
   #tiles {
     .card-footer {
       text-transform: initial;
@@ -228,7 +302,7 @@
 // xs
 @media (max-width: 575.98px) {
   body {
-    font-size: 0.70rem;
+    font-size: 0.7rem;
   }
 
   .navbar {
