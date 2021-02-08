@@ -98,7 +98,7 @@
 </nav>
 
 <!--Tiles-->
-<section id="tiles" >
+<section id="tiles">
     <div class="container-fluid">
         <div class="row mt-2 mt-lg-0  my-lg-4">
             <div class="col-4 col-lg-2 mb-3 mb-lg-0 ">
@@ -489,7 +489,6 @@
 </section>
 
 
-
 <!-- Modals -->
 <!--Favourties Modal-->
 <div class="modal fade" id="favs" tabindex="-1" aria-labelledby="favsModal" aria-hidden="true">
@@ -512,18 +511,80 @@
 
 <!--Cart Modal-->
 <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="cartTitle">Shopping Cart</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/home/featured/3.jpg" alt="" class="img-thumbnail">
+                    </div>
+                    <div class="col-9">
+                        <h5 class="prod-title">Nillkin Flex PURE Pro MagSafe cover case</h5>
+                        <div class="d-flex justify-content-between mt-4
+">
+                            <div>
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Quantity</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                    <option value="3">6</option>
+                                    <option value="3">7</option>
+                                    <option value="3">8</option>
+                                    <option value="3">9</option>
+                                    <option value="3">10</option>
+                                </select>
+                            </div>
+                            <div class="price"><span>Unit Price (ksh):</span> 1200</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div class="remove btn btn-sm btn-danger">Remove <i class="bi bi-trash"></i></div>
+                            <div class="price"><span>Subtotal (ksh):</span> 2000</div>
+                        </div>
+                    </div>
+                    <hr class="mt-2">
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/home/featured/1.jpg" alt="" class="img-thumbnail">
+                    </div>
+                    <div class="col-9">
+                        <h5 class="prod-title">Nillkin Textured nylon fiber case for Apple iPhone 12 Mini</h5>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div>
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Quantity</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                    <option value="3">6</option>
+                                    <option value="3">7</option>
+                                    <option value="3">8</option>
+                                    <option value="3">9</option>
+                                    <option value="3">10</option>
+                                </select>
+                            </div>
+                            <div class="price"><span>Unit Price (ksh):</span> 800</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <div class="remove btn btn-sm btn-danger">Remove <i class="bi bi-trash"></i></div>
+                            <div class="price"><span>Subtotal (ksh):</span> 800</div>
+                        </div>
+                    </div>
+                    <hr class="mt-2">
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-footer d-flex justify-content-between">
+                <div>Total (ksh): <span class="total">3250</span></div>
+                <button type="button" class="btn btn-success">Checkout</button>
             </div>
         </div>
     </div>

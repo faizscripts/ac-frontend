@@ -61,6 +61,43 @@ body {
   border-radius: 50%;
 }
 
+#cart .modal-title {
+  font-weight: 800;
+}
+#cart .prod-title {
+  font-weight: 600;
+}
+#cart .modal-body {
+  padding-bottom: 0;
+}
+#cart .img-thumbnail {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  object-position: center center;
+}
+#cart .form-select:hover {
+  cursor: pointer;
+}
+#cart .remove:hover {
+  cursor: pointer;
+}
+#cart .price {
+  font-weight: 600;
+}
+#cart span {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+#cart .modal-footer {
+  border-top: 0;
+  padding-top: 0;
+}
+#cart .total {
+  font-weight: 800;
+  font-size: 1.7rem;
+}
+
 #tiles {
   margin-top: 5rem;
 }
@@ -70,6 +107,7 @@ body {
 #tiles .image-tile {
   height: 11rem;
   object-fit: cover;
+  object-position: center center;
 }
 #tiles .card-footer {
   font-size: 0.9rem;

@@ -1,11 +1,12 @@
 @import "variables";
+@import "mixins";
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.card:hover {
-  cursor: pointer;
+.card {
+  @include pointer;
 }
 
 
@@ -53,8 +54,8 @@ body {
     position: relative;
   }
 
-  .notification:hover {
-    cursor: pointer;
+  .notification {
+    @include pointer
   }
 
 
@@ -75,6 +76,51 @@ body {
   }
 }
 
+#cart{
+  .modal-title{
+    font-weight: 800;
+  }
+
+  .prod-title{
+    font-weight: 600;
+  }
+
+  .modal-body{
+    padding-bottom: 0;
+  }
+
+  .img-thumbnail{
+    height: 10rem;
+    width: 10rem;
+    @include resizeImage;
+  }
+
+  .form-select{
+    @include pointer;
+  }
+
+  .remove{
+    @include pointer;
+  }
+  .price{
+    font-weight: 600;
+  }
+
+  span{
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+
+  .modal-footer{
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .total{
+    font-weight: 800;
+    font-size: 1.7rem;
+  }
+}
 
 #tiles {
   margin-top: 5rem;
@@ -85,7 +131,7 @@ body {
 
   .image-tile {
     height: 11rem;
-    object-fit: cover;
+    @include resizeImage
   }
 
   .card-footer {
@@ -162,8 +208,7 @@ body {
 
   .card-img-top{
     height: 14rem;
-    object-fit: cover;
-    object-position: center center;
+   @include resizeImage
   }
 
   .action {

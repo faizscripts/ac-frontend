@@ -1,0 +1,11 @@
+@mixin resizeImage{
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+@mixin pointer{
+  &:hover{
+    cursor: pointer;
+  }
+}
