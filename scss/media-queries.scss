@@ -122,6 +122,37 @@
 
   }
 
+  #favs{
+    .prod-title{
+      font-size: 0.8rem;
+    }
+
+    .img-thumbnail{
+      height: 7rem;
+      width: 7rem;
+    }
+
+    .price{
+      font-weight: 600;
+    }
+
+    span{
+      font-size: 0.6rem;
+    }
+
+    .form-select{
+      font-size: 0.7rem;
+    }
+
+    .remove{
+      font-size: 0.7rem;
+    }
+
+    .favs-footer{
+      font-size: 0.8rem;
+    }
+  }
+
   #cart{
     .prod-title{
       font-size: 0.8rem;
@@ -185,42 +216,40 @@
 // small
 @media (max-width: 767.98px) {
   body {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
-  .navbar {
+  #favs{
 
-    #logo {
-      width: 125px;
-      height: auto;
-      margin-left: 2rem;
+    .modal-title{
+      font-size: 0.7rem;
     }
 
-    .navbar-nav {
-      text-transform: initial;
-      margin-left: 0;
-      margin-top: 0;
+    .prod-title{
+      font-size: 0.5rem;
     }
 
-    .nav-link:hover {
-      border-bottom: none;
+    .img-thumbnail{
+      height: 5rem;
+      width: 5rem;
     }
 
-    .active {
-      border-bottom: none;
+    .price{
+      font-size: 0.6rem;
+      font-weight: 600;
     }
 
-    #nav-icons {
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 1rem;
-      font-size: 1.2rem;
+    span{
+      font-size: 0.45rem;
     }
 
-    #search-nav {
-      font-size: 0.80rem;
+    .remove{
+      font-size: 0.5rem;
     }
 
+    .favs-footer{
+      font-size: 0.6rem;
+    }
   }
 
   #cart{
@@ -239,19 +268,19 @@
     }
 
     .price{
-      font-size: 0.55rem;
+      font-size: 0.6rem;
       font-weight: 600;
     }
 
     span{
-      font-size: 0.3rem;
+      font-size: 0.45rem;
     }
     .form-select{
-      font-size: 0.4rem;
+      font-size: 0.5rem;
     }
 
     .remove{
-      font-size: 0.4rem;
+      font-size: 0.5rem;
     }
 
     .total{

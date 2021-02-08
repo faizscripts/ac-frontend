@@ -61,6 +61,39 @@ body {
   border-radius: 50%;
 }
 
+#favs .modal-title {
+  font-weight: 800;
+}
+#favs .prod-title {
+  font-weight: 600;
+}
+#favs .modal-body {
+  padding-bottom: 0;
+}
+#favs .img-thumbnail {
+  height: 10rem;
+  width: 10rem;
+  object-fit: cover;
+  object-position: center center;
+}
+#favs .form-select:hover {
+  cursor: pointer;
+}
+#favs .remove:hover {
+  cursor: pointer;
+}
+#favs .price {
+  font-weight: 600;
+}
+#favs span {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+#favs .modal-footer {
+  border-top: 0;
+  padding-top: 0;
+}
+
 #cart .modal-title {
   font-weight: 800;
 }
@@ -286,6 +319,29 @@ body {
     font-size: 0.8rem;
   }
 
+  #favs .prod-title {
+    font-size: 0.8rem;
+  }
+  #favs .img-thumbnail {
+    height: 7rem;
+    width: 7rem;
+  }
+  #favs .price {
+    font-weight: 600;
+  }
+  #favs span {
+    font-size: 0.6rem;
+  }
+  #favs .form-select {
+    font-size: 0.7rem;
+  }
+  #favs .remove {
+    font-size: 0.7rem;
+  }
+  #favs .favs-footer {
+    font-size: 0.8rem;
+  }
+
   #cart .prod-title {
     font-size: 0.8rem;
   }
@@ -330,33 +386,31 @@ body {
 }
 @media (max-width: 767.98px) {
   body {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
   }
 
-  .navbar #logo {
-    width: 125px;
-    height: auto;
-    margin-left: 2rem;
+  #favs .modal-title {
+    font-size: 0.7rem;
   }
-  .navbar .navbar-nav {
-    text-transform: initial;
-    margin-left: 0;
-    margin-top: 0;
+  #favs .prod-title {
+    font-size: 0.5rem;
   }
-  .navbar .nav-link:hover {
-    border-bottom: none;
+  #favs .img-thumbnail {
+    height: 5rem;
+    width: 5rem;
   }
-  .navbar .active {
-    border-bottom: none;
+  #favs .price {
+    font-size: 0.6rem;
+    font-weight: 600;
   }
-  .navbar #nav-icons {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 1rem;
-    font-size: 1.2rem;
+  #favs span {
+    font-size: 0.45rem;
   }
-  .navbar #search-nav {
-    font-size: 0.8rem;
+  #favs .remove {
+    font-size: 0.5rem;
+  }
+  #favs .favs-footer {
+    font-size: 0.6rem;
   }
 
   #cart .modal-title {
@@ -370,17 +424,17 @@ body {
     width: 5rem;
   }
   #cart .price {
-    font-size: 0.55rem;
+    font-size: 0.6rem;
     font-weight: 600;
   }
   #cart span {
-    font-size: 0.3rem;
+    font-size: 0.45rem;
   }
   #cart .form-select {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
   #cart .remove {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
   #cart .total {
     font-size: 0.9rem;

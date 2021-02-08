@@ -5,6 +5,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 .card {
   @include pointer;
 }
@@ -76,6 +77,50 @@ body {
   }
 }
 
+
+#favs{
+  .modal-title{
+    font-weight: 800;
+  }
+
+  .prod-title{
+    font-weight: 600;
+  }
+
+  .modal-body{
+    padding-bottom: 0;
+  }
+
+  .img-thumbnail{
+    height: 10rem;
+    width: 10rem;
+    @include resizeImage;
+  }
+
+  .form-select{
+    @include pointer;
+  }
+
+  .remove{
+    @include pointer;
+  }
+  .price{
+    font-weight: 600;
+  }
+
+  span{
+    font-size: 0.75rem;
+    font-weight: normal;
+  }
+
+  .modal-footer{
+    border-top: 0;
+    padding-top: 0;
+  }
+
+}
+
+
 #cart{
   .modal-title{
     font-weight: 800;
@@ -121,6 +166,7 @@ body {
     font-size: 1.7rem;
   }
 }
+
 
 #tiles {
   margin-top: 5rem;
