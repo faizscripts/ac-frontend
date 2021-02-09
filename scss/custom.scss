@@ -10,7 +10,7 @@ body {
 
 //  Back to top
   .to-top {
-    background: #111111;
+    background: #171717;
     position: fixed;
     bottom: 16px;
     right:32px;
@@ -316,6 +316,82 @@ body {
   }
 
 }
+
+#footer{
+
+  .footer1{
+    background: $grey;
+
+    .info-heading{
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-left: 2rem;
+    }
+
+    li{
+      list-style-type: none;
+      a{
+        text-decoration: none;
+        color: $black;
+      }
+    }
+
+    .reg{
+      width: 10rem;
+      margin-top: 2rem;
+    }
+
+    #reach{
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    .text-center{
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .fab{
+      padding: 1rem;
+      font-size: 2rem;
+      width: 4rem;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+
+    .fa-facebook-f {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+      color: white;
+    }
+
+    .fa-whatsapp{
+      background: #25D366;
+      color: white;
+    }
+  }
+
+  .footer2{
+    background: $black;
+    color: white;
+    font-size: 0.8rem;
+  }
+}
+
+
 
 
 @import "media-queries";

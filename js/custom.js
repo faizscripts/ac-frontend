@@ -10,12 +10,9 @@ window.addEventListener("scroll", () => {
 })
 
 
-// Modals
-var myModal = document.getElementById('myModal')
-var myInput = document.getElementById('myInput')
+// Copyright year
+let year = new Date().getFullYear();
 
-myModal.addEventListener('shown.bs.modal', function () {
-    myInput.focus()
-})
+document.querySelector('#copyright').innerHTML = year;
 
 

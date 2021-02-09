@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
 
     <!--    Favicon -->
     <link rel="icon" href="img/favicon.ico">
@@ -400,7 +401,7 @@
 </section>
 
 <!--Sale-->
-<section class="container featured">
+<section class="container featured mb-4">
     <h4 class="section-title">
         Sale
     </h4>
@@ -488,6 +489,52 @@
     </div>
 </section>
 
+<!--Footer-->
+<section id="footer" class="container-fluid px-0">
+    <div class="footer1 p-4">
+        <div class="row">
+            <div class="col-4 text-center">
+                <div class="info-heading mb-2">
+                    Information
+                </div>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">How to order</a></li>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">Customer care</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <div class="text-center">
+                    <p id="reach" >Contact us</p>
+                    <p>
+                        <button class="btn btn-primary"><a href="tel:+254705063256"><i class="bi bi-telephone-fill"></i> Call </a></button>
+                        <button class="btn btn-primary"><a href="mailto:amazoncelullar@gmail.com" ><i class="bi bi-envelope-fill"></i> Mail</a></button>
+                        <button class="btn btn-primary"><a href="sms:+254705063256" ><i class="bi bi-chat-dots-fill"></i> SMS</a></button>
+                    </p>
+                    <p>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="col-2 offset-1">
+                <div class="d-flex justify-content-between flex-column">
+                    <button type="button" class="btn btn-warning reg">Register</button>
+                    <button type="button" class="btn btn-warning reg">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer2 text-center p-2">
+         &copy; Amazon Cellular <span id="copyright"> 20213</span>. All Rights Reserved.
+    </div>
+</section>
+
 
 <!--Back to top -->
 <a href="#" class="to-top">
@@ -514,7 +561,8 @@
                             <div class="price"><span>Unit Price (ksh):</span> 800</div>
                         </div>
                         <div class="d-flex justify-content-between mt-3 mt-lg-4">
-                            <div class="remove btn btn-sm btn-outline-success">Add to cart <i class="bi bi-cart3"></i></div>
+                            <div class="remove btn btn-sm btn-outline-success">Add to cart <i class="bi bi-cart3"></i>
+                            </div>
                             <div class="remove btn btn-sm btn-outline-danger">Remove <i class="bi bi-trash"></i></div>
                         </div>
                     </div>
@@ -530,7 +578,8 @@
                             <div class="price"><span>Unit Price (ksh):</span> 800</div>
                         </div>
                         <div class="d-flex justify-content-between mt-3 mt-lg-4">
-                            <div class="remove btn btn-sm btn-outline-success">Add to cart <i class="bi bi-cart3"></i></div>
+                            <div class="remove btn btn-sm btn-outline-success">Add to cart <i class="bi bi-cart3"></i>
+                            </div>
                             <div class="remove btn btn-sm btn-outline-danger">Remove <i class="bi bi-trash"></i></div>
                         </div>
                     </div>
@@ -538,8 +587,8 @@
                 </div>
             </div>
             <div class="modal-footer d-flex justify-content-between">
-                <button type="button" class="btn btn-success favs-footer" >Add all to cart</button>
-                <button type="button" class="btn btn-danger favs-footer" >Remove all</button>
+                <button type="button" class="btn btn-success favs-footer">Add all to cart</button>
+                <button type="button" class="btn btn-danger favs-footer">Remove all</button>
             </div>
         </div>
     </div>
@@ -635,5 +684,14 @@
 
 <!--Custom JS -->
 <script src="js/custom.js"></script>
+<script>
+    // Modals
+    let myModal = document.getElementById('myModal')
+    let myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+    })
+</script>
 </body>
 </html>
