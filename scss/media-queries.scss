@@ -217,6 +217,19 @@
 @media (max-width: 767.98px) {
   body {
     font-size: 0.75rem;
+
+  //   Back to top
+    .to-top {
+      bottom: 16px;
+      right:13px;
+      width:37px;
+      height:37px;
+      font-size:29px;
+    }
+
+    .to-top.active {
+      bottom:18px;
+    }
   }
 
   #favs{
