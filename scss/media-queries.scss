@@ -210,6 +210,50 @@
     }
 
   }
+
+  #footer{
+
+    .footer1{
+
+      .info-heading{
+        font-size: 1rem;
+      }
+
+      .info-list{
+        font-size: 0.8rem;
+      }
+
+      #reach{
+        font-size: 1rem;
+      }
+
+      .phone{
+        font-size: 0.7rem;
+      }
+
+
+      .fab{
+        padding: 0.6rem;
+        font-size: 1.5rem;
+        width: 3rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+
+      }
+
+      .reg{
+        width: 6rem;
+        margin-top: 1.5rem;
+      }
+
+    }
+
+    .footer2{
+      font-size: 0.65rem;
+    }
+
+  }
 }
 
 
@@ -337,6 +381,62 @@
     .card-img-top{
       height: 6rem;
     }
+  }
+
+  #footer{
+
+    .footer1{
+
+      .info-heading{
+        font-size: 0.8rem;
+        margin-left: 0;
+        text-align: center;
+      }
+
+      .info-list{
+        font-size: 0.6rem;
+      }
+
+      li{
+        display: inline-block;
+        width: 49%;
+      }
+
+      p{
+        margin-bottom: 0.3rem;
+      }
+
+      #reach{
+        font-size: 0.8rem;
+      }
+
+      .phone{
+        font-size: 0.7rem;
+      }
+
+
+      .fab{
+        padding: 0.6rem;
+        font-size: 1.5rem;
+        width: 3rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+
+      }
+
+      .reg{
+        width: 6rem;
+        margin-top: 0.3rem;
+        font-size: 0.8rem;
+      }
+
+    }
+
+    .footer2{
+      font-size: 0.45rem;
+    }
+
   }
 }
 

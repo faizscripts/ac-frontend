@@ -29,7 +29,7 @@ body {
   }
 
   .to-top.active {
-    bottom:32px;
+    bottom:37px;
     pointer-events: auto;
     opacity:1;
   }
@@ -317,6 +317,7 @@ body {
 
 }
 
+
 #footer{
 
   .footer1{
@@ -329,6 +330,10 @@ body {
       margin-left: 2rem;
     }
 
+    .info-list{
+      text-align: left;
+    }
+
     li{
       list-style-type: none;
       a{
@@ -337,14 +342,9 @@ body {
       }
     }
 
-    .reg{
-      width: 10rem;
-      margin-top: 2rem;
-    }
-
     #reach{
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 1.2rem;
     }
 
@@ -365,6 +365,7 @@ body {
 
       &:hover{
         opacity: 0.7;
+        cursor: pointer;
       }
     }
 
@@ -381,6 +382,12 @@ body {
     .fa-whatsapp{
       background: #25D366;
       color: white;
+    }
+
+    .reg{
+      font-weight: 700;
+      width: 10rem;
+      margin-top: 2rem;
     }
   }
 
