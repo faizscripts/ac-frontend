@@ -360,11 +360,6 @@ body {
     }
   }
 
-  .prod-start {
-    width: 10rem;
-    font-size: 0.9rem;
-  }
-
   .count {
     display: flex;
     justify-content: space-between;
@@ -383,6 +378,10 @@ body {
       font-size: 0.8rem;
       font-weight: normal;
     }
+  }
+
+  .prod-start {
+    width: 10rem;
   }
 
   #share {
@@ -421,10 +420,15 @@ body {
     }
   }
 
+  .scroll{
+    font-size: 0.85rem;
+  }
+
   .description{
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 700;
+    margin-left: 1rem;
   }
 
 
