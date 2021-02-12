@@ -8,30 +8,30 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
 
-//  Back to top
+  //  Back to top
   .to-top {
     background: #171717;
     position: fixed;
     bottom: 16px;
-    right:32px;
-    width:50px;
-    height:50px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:32px;
+    font-size: 32px;
     color: white;
     text-decoration: none;
-    opacity:0;
+    opacity: 0;
     pointer-events: none;
     transition: all .4s;
   }
 
   .to-top.active {
-    bottom:37px;
+    bottom: 37px;
     pointer-events: auto;
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -108,42 +108,43 @@ body {
 }
 
 
-#favs{
-  .modal-title{
+#favs {
+  .modal-title {
     font-weight: 800;
   }
 
-  .prod-title{
+  .prod-title {
     font-weight: 600;
   }
 
-  .modal-body{
+  .modal-body {
     padding-bottom: 0;
   }
 
-  .img-thumbnail{
+  .img-thumbnail {
     height: 10rem;
     width: 10rem;
     @include resizeImage;
   }
 
-  .form-select{
+  .form-select {
     @include pointer;
   }
 
-  .remove{
+  .remove {
     @include pointer;
   }
-  .price{
+
+  .price {
     font-weight: 600;
   }
 
-  span{
+  span {
     font-size: 0.75rem;
     font-weight: normal;
   }
 
-  .modal-footer{
+  .modal-footer {
     border-top: 0;
     padding-top: 0;
   }
@@ -151,50 +152,75 @@ body {
 }
 
 
-#cart{
-  .modal-title{
+#cart {
+  .modal-title {
     font-weight: 800;
   }
 
-  .prod-title{
+  .prod-title {
     font-weight: 600;
   }
 
-  .modal-body{
+  .modal-body {
     padding-bottom: 0;
   }
 
-  .img-thumbnail{
+  .img-thumbnail {
     height: 10rem;
     width: 10rem;
     @include resizeImage;
   }
 
-  .form-select{
+  .form-select {
     @include pointer;
   }
 
-  .remove{
+  .remove {
     @include pointer;
   }
-  .price{
+
+  .price {
     font-weight: 600;
   }
 
-  span{
+  span {
     font-size: 0.75rem;
     font-weight: normal;
   }
 
-  .modal-footer{
+  .modal-footer {
     border-top: 0;
     padding-top: 0;
   }
 
-  .total{
+  .total {
     font-weight: 800;
     font-size: 1.7rem;
   }
+}
+
+
+#why {
+  margin-top: 3rem;
+  background: $grey;
+
+  .why-title {
+    margin-bottom: -2rem;
+    color: #111111;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: initial;
+    display: inline-block;
+  }
+
+  .row {
+    font-weight: 600;
+  }
+
+  i {
+    font-size: 5rem;
+  }
+
 }
 
 
@@ -247,12 +273,12 @@ body {
     color: white;
   }
 
-  .card{
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  .card {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s ease-in-out;
   }
 
-  .card:hover{
+  .card:hover {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
   }
 
@@ -282,9 +308,9 @@ body {
     text-decoration: line-through $red;
   }
 
-  .card-img-top{
+  .card-img-top {
     height: 14rem;
-   @include resizeImage
+    @include resizeImage
   }
 
   .action {
@@ -295,75 +321,80 @@ body {
 }
 
 
-#why{
-  margin-top: 3rem;
-  background: $grey;
+#product-view {
 
-  .why-title {
-    margin-bottom: -2rem;
-    color: #111111;
-    font-size: 1.5rem;
+  .modal-title {
     font-weight: 800;
-    text-transform: initial;
-    display: inline-block;
-  }
-  .row{
-    font-weight: 600;
   }
 
-  i{
-    font-size: 5rem;
+  #prod-main-img {
+    width: 100%;
+    height: 37rem;
+    @include resizeImage;
   }
 
-}
+  .small-img-row {
+    display: flex;
+  }
 
+  .small-img-col {
+    flex-basis: 3.5rem;
+  }
 
-#footer{
+  .prod-small-img {
+    margin-top: 0.8rem;
+    width: 3rem;
+    height: 3rem;
+    @include resizeImage;
+    @include pointer;
+  }
 
-  .footer1{
-    background: $grey;
+  #prod-price {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
 
-    .info-heading{
-      text-transform: uppercase;
-      font-weight: 800;
+    span {
+      font-size: 0.9rem;
+      font-weight: normal;
+    }
+  }
+
+  .prod-start {
+    width: 10rem;
+    font-size: 0.9rem;
+  }
+
+  .count {
+    display: flex;
+    justify-content: space-between;
+
+    .form-control {
+      width: 7.3rem;
+      font-size: 0.8rem;
+    }
+
+    .count-sub {
       font-size: 1.2rem;
-      margin-left: 2rem;
+      font-weight: 600;
     }
 
-    .info-list{
-      text-align: left;
+    span {
+      font-size: 0.8rem;
+      font-weight: normal;
     }
+  }
 
-    li{
-      list-style-type: none;
-      a{
-        text-decoration: none;
-        color: $black;
-      }
-    }
-
-    #reach{
-      text-transform: uppercase;
-      font-weight: 800;
-      font-size: 1.2rem;
-    }
-
-    .text-center{
-      a{
-        text-decoration: none;
-        color: inherit;
-      }
-    }
-
-    .fab{
-      padding: 1rem;
-      font-size: 2rem;
-      width: 4rem;
+  #share {
+    .fab {
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      width: 2.5rem;
       text-align: center;
       text-decoration: none;
       border-radius: 50%;
 
-      &:hover{
+      &:hover {
         opacity: 0.7;
         cursor: pointer;
       }
@@ -375,30 +406,111 @@ body {
     }
 
     .fa-instagram {
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
       color: white;
     }
 
-    .fa-whatsapp{
+    .fa-whatsapp {
       background: #25D366;
       color: white;
     }
 
-    .reg{
+    .fa-twitter {
+      background: #00acee;
+      color: white;
+    }
+  }
+
+  .description{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+
+}
+
+
+#footer {
+
+  .footer1 {
+    background: $grey;
+
+    .info-heading {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-left: 2rem;
+    }
+
+    .info-list {
+      text-align: left;
+    }
+
+    li {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+
+    #reach {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.2rem;
+    }
+
+    .text-center {
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    .fab {
+      padding: 1rem;
+      font-size: 2rem;
+      width: 4rem;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+
+      &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+
+    .fa-facebook-f {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: white;
+    }
+
+    .fa-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .reg {
       font-weight: 700;
       width: 10rem;
       margin-top: 2rem;
     }
   }
 
-  .footer2{
+  .footer2 {
     background: $black;
     color: white;
     font-size: 0.8rem;
   }
 }
-
-
 
 
 @import "media-queries";

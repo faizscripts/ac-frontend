@@ -158,6 +158,25 @@ body .to-top.active {
   font-size: 1.7rem;
 }
 
+#why {
+  margin-top: 3rem;
+  background: #f4f4f4;
+}
+#why .why-title {
+  margin-bottom: -2rem;
+  color: #111111;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: initial;
+  display: inline-block;
+}
+#why .row {
+  font-weight: 600;
+}
+#why i {
+  font-size: 5rem;
+}
+
 #tiles {
   margin-top: 5rem;
 }
@@ -239,23 +258,92 @@ body .to-top.active {
   font-size: 1.5rem;
 }
 
-#why {
-  margin-top: 3rem;
-  background: #f4f4f4;
-}
-#why .why-title {
-  margin-bottom: -2rem;
-  color: #111111;
-  font-size: 1.5rem;
+#product-view .modal-title {
   font-weight: 800;
-  text-transform: initial;
-  display: inline-block;
 }
-#why .row {
+#product-view #prod-main-img {
+  width: 100%;
+  height: 37rem;
+  object-fit: cover;
+  object-position: center center;
+}
+#product-view .small-img-row {
+  display: flex;
+}
+#product-view .small-img-col {
+  flex-basis: 3.5rem;
+}
+#product-view .prod-small-img {
+  margin-top: 0.8rem;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  object-position: center center;
+}
+#product-view .prod-small-img:hover {
+  cursor: pointer;
+}
+#product-view #prod-price {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#product-view #prod-price span {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+#product-view .prod-start {
+  width: 10rem;
+  font-size: 0.9rem;
+}
+#product-view .count {
+  display: flex;
+  justify-content: space-between;
+}
+#product-view .count .form-control {
+  width: 7.3rem;
+  font-size: 0.8rem;
+}
+#product-view .count .count-sub {
+  font-size: 1.2rem;
   font-weight: 600;
 }
-#why i {
-  font-size: 5rem;
+#product-view .count span {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+#product-view #share .fab {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+#product-view #share .fab:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+#product-view #share .fa-facebook-f {
+  background: #3B5998;
+  color: white;
+}
+#product-view #share .fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+}
+#product-view #share .fa-whatsapp {
+  background: #25D366;
+  color: white;
+}
+#product-view #share .fa-twitter {
+  background: #00acee;
+  color: white;
+}
+#product-view .description {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 #footer .footer1 {
@@ -341,7 +429,7 @@ body .to-top.active {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 1150px) {
+@media (max-width: 1199.98px) {
   body {
     font-size: 0.85rem;
   }
