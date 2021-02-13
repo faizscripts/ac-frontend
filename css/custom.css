@@ -156,18 +156,28 @@ body .to-top.active {
   background: #f4f4f4;
 }
 #why .why-title {
-  margin-bottom: -2rem;
+  margin: 1rem 0 1.5rem 0;
   color: #111111;
   font-size: 1.5rem;
   font-weight: 800;
-  text-transform: initial;
-  display: inline-block;
+  text-transform: uppercase;
 }
-#why .row {
+#why h5 {
+  display: inline;
   font-weight: 600;
 }
 #why i {
-  font-size: 5rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+#why p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+#why span {
+  display: block;
+  font-size: 0.6rem;
 }
 
 #tiles {
@@ -423,6 +433,24 @@ body .to-top.active {
     font-size: 0.6rem;
   }
 
+  #why .why-title {
+    font-size: 1.3rem;
+  }
+  #why h5 {
+    display: inline;
+    font-size: 0.9rem;
+  }
+  #why i {
+    font-size: 1.5rem;
+  }
+  #why p {
+    margin-top: 0.9rem;
+    font-size: 0.7rem;
+  }
+  #why span {
+    font-size: 0.5rem;
+  }
+
   .featured .card-title {
     font-size: 0.7rem;
   }
@@ -567,6 +595,17 @@ body .to-top.active {
   }
   #cart #checkout {
     font-size: 0.9rem;
+  }
+
+  #why .why-title {
+    margin: 0.8rem 0 1rem 0;
+  }
+  #why p {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+  }
+  #why span {
+    font-size: 0.4rem;
   }
 
   .featured .card {
@@ -739,22 +778,22 @@ body .to-top.active {
     text-transform: initial;
   }
 
-  #why {
-    margin-top: 1rem;
-  }
   #why .why-title {
-    margin-bottom: -1rem;
-    font-size: 0.7rem;
-    font-weight: 600;
+    margin: 0.5rem 0 0.7rem 0;
+    font-size: 1.2rem;
   }
-  #why .row {
-    font-weight: 600;
+  #why h5 {
+    font-size: 0.77rem;
   }
   #why i {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
   #why p {
-    font-size: 0.65rem;
+    margin-top: 0.2rem;
+    font-size: 0.6rem;
+  }
+  #why span {
+    font-size: 0.4rem;
   }
 
   .featured .card-img-top {

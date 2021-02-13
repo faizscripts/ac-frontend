@@ -28,6 +28,30 @@
     }
   }
 
+  #why {
+    .why-title {
+      font-size: 1.3rem;
+    }
+
+    h5 {
+      display: inline;
+      font-size: 0.9rem;
+    }
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-top: 0.9rem;
+      font-size: 0.7rem;
+    }
+
+    span {
+      font-size: 0.5rem;
+    }
+  }
+
   .featured {
     .card-title {
       font-size: 0.7rem;
@@ -37,11 +61,11 @@
       font-size: 0.7rem;
     }
 
-    .card-img-top{
+    .card-img-top {
       height: 10rem;
     }
 
-    span{
+    span {
       font-size: 0.6rem;
     }
   }
@@ -96,7 +120,7 @@
       font-size: 0.8rem;
     }
 
-    .checkout{
+    .checkout {
       font-size: 0.8rem;
     }
 
@@ -108,15 +132,15 @@
       }
     }
 
-    .scroll{
+    .scroll {
       font-size: 0.7rem;
     }
 
-    .description{
+    .description {
       font-size: 1.1rem;
     }
 
-    .bullets{
+    .bullets {
       font-size: 0.8rem;
     }
 
@@ -127,7 +151,7 @@
 
 // medium
 @media (max-width: 991.98px) {
-  body{
+  body {
     font-size: 0.85rem;
   }
 
@@ -166,74 +190,91 @@
 
   }
 
-  #favs{
-    .prod-title{
+  #favs {
+    .prod-title {
       font-size: 0.8rem;
     }
 
-    .img-thumbnail{
+    .img-thumbnail {
       height: 7rem;
       width: 7rem;
     }
 
-    .price{
+    .price {
       font-weight: 600;
     }
 
-    span{
+    span {
       font-size: 0.6rem;
     }
 
-    .form-select{
+    .form-select {
       font-size: 0.7rem;
     }
 
-    .remove{
+    .remove {
       font-size: 0.7rem;
     }
 
-    .favs-footer{
+    .favs-footer {
       font-size: 0.8rem;
     }
   }
 
-  #cart{
-    .prod-title{
+  #cart {
+    .prod-title {
       font-size: 0.8rem;
     }
 
-    .img-thumbnail{
+    .img-thumbnail {
       height: 7rem;
       width: 7rem;
     }
 
-    .price{
+    .price {
       font-weight: 600;
     }
 
-    span{
+    span {
       font-size: 0.6rem;
     }
-    .form-select{
+
+    .form-select {
       font-size: 0.7rem;
     }
 
-    .remove{
+    .remove {
       font-size: 0.7rem;
     }
 
-    .total{
+    .total {
       font-size: 1.2rem;
     }
 
-    #checkout{
+    #checkout {
       font-size: 0.9rem;
+    }
+  }
+
+  #why {
+    .why-title {
+      margin: 0.8rem 0 1rem 0;
+    }
+
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 0.6rem;
+    }
+
+    span {
+      font-size: 0.4rem;
     }
   }
 
   .featured {
 
-    .card{
+    .card {
       margin-bottom: 2rem;
     }
 
@@ -245,11 +286,11 @@
       font-size: 0.7rem;
     }
 
-    .card-img-top{
+    .card-img-top {
       height: 14rem;
     }
 
-    span{
+    span {
       font-size: 0.6rem;
     }
 
@@ -305,7 +346,7 @@
       font-size: 0.5rem;
     }
 
-    .checkout{
+    .checkout {
       font-size: 0.5rem;
     }
 
@@ -317,42 +358,42 @@
       }
     }
 
-    .scroll{
+    .scroll {
       font-size: 0.6rem;
     }
 
-    .description{
+    .description {
       font-size: 0.9rem;
     }
 
-    .bullets{
+    .bullets {
       font-size: 0.6rem;
     }
 
   }
 
-  #footer{
+  #footer {
 
-    .footer1{
+    .footer1 {
 
-      .info-heading{
+      .info-heading {
         font-size: 1rem;
       }
 
-      .info-list{
+      .info-list {
         font-size: 0.8rem;
       }
 
-      #reach{
+      #reach {
         font-size: 1rem;
       }
 
-      .phone{
+      .phone {
         font-size: 0.7rem;
       }
 
 
-      .fab{
+      .fab {
         padding: 0.6rem;
         font-size: 1.5rem;
         width: 3rem;
@@ -362,14 +403,14 @@
 
       }
 
-      .reg{
+      .reg {
         width: 6rem;
         margin-top: 1.5rem;
       }
 
     }
 
-    .footer2{
+    .footer2 {
       font-size: 0.65rem;
     }
 
@@ -382,89 +423,90 @@
   body {
     font-size: 0.75rem;
 
-  //   Back to top
+    //   Back to top
     .to-top {
       bottom: 16px;
-      right:13px;
-      width:37px;
-      height:37px;
-      font-size:29px;
+      right: 13px;
+      width: 37px;
+      height: 37px;
+      font-size: 29px;
     }
 
     .to-top.active {
-      bottom:30px;
+      bottom: 30px;
     }
   }
 
-  #favs{
+  #favs {
 
-    .modal-title{
+    .modal-title {
       font-size: 0.7rem;
     }
 
-    .prod-title{
+    .prod-title {
       font-size: 0.5rem;
     }
 
-    .img-thumbnail{
+    .img-thumbnail {
       height: 5rem;
       width: 5rem;
     }
 
-    .price{
+    .price {
       font-size: 0.6rem;
       font-weight: 600;
     }
 
-    span{
+    span {
       font-size: 0.45rem;
     }
 
-    .remove{
+    .remove {
       font-size: 0.5rem;
     }
 
-    .favs-footer{
+    .favs-footer {
       font-size: 0.6rem;
     }
   }
 
-  #cart{
+  #cart {
 
-    .modal-title{
+    .modal-title {
       font-size: 0.7rem;
     }
 
-    .prod-title{
+    .prod-title {
       font-size: 0.5rem;
     }
 
-    .img-thumbnail{
+    .img-thumbnail {
       height: 5rem;
       width: 5rem;
     }
 
-    .price{
+    .price {
       font-size: 0.6rem;
       font-weight: 600;
     }
 
-    span{
+    span {
       font-size: 0.45rem;
     }
-    .form-select{
+
+    .form-select {
       font-size: 0.5rem;
     }
 
-    .remove{
+    .remove {
       font-size: 0.5rem;
     }
 
-    .total{
+    .total {
       font-size: 0.9rem;
     }
 
-    #checkout{
+    #checkout {
       font-size: 0.6rem;
     }
   }
@@ -475,30 +517,33 @@
     }
   }
 
-  #why{
-    margin-top: 1rem;
-
+  #why {
     .why-title {
-      margin-bottom: -1rem;
-      font-size: 0.7rem;
-      font-weight: 600;
-    }
-    .row{
-      font-weight: 600;
+      margin: 0.5rem 0 0.7rem 0;
+      font-size: 1.2rem;
     }
 
-    i{
-      font-size: 2.5rem;
+    h5 {
+      font-size: 0.77rem;
     }
 
-    p{
-      font-size: 0.65rem;
+    i {
+      font-size: 1rem;
+    }
+
+    p {
+      margin-top: 0.2rem;
+      font-size: 0.6rem;
+    }
+
+    span {
+      font-size: 0.4rem;
     }
 
   }
 
-  .featured{
-    .card-img-top{
+  .featured {
+    .card-img-top {
       height: 7rem;
     }
   }
@@ -555,7 +600,7 @@
       font-size: 0.55rem;
     }
 
-    .checkout{
+    .checkout {
       font-size: 0.55rem;
     }
 
@@ -569,53 +614,53 @@
       }
     }
 
-    .scroll{
+    .scroll {
       font-size: 0.6rem;
     }
 
-    .description{
+    .description {
       font-size: 0.9rem;
     }
 
-    .bullets{
+    .bullets {
       font-size: 0.6rem;
     }
 
   }
 
-  #footer{
+  #footer {
 
-    .footer1{
+    .footer1 {
 
-      .info-heading{
+      .info-heading {
         font-size: 0.8rem;
         margin-left: 0;
         text-align: center;
       }
 
-      .info-list{
+      .info-list {
         font-size: 0.6rem;
       }
 
-      li{
+      li {
         display: inline-block;
         width: 49%;
       }
 
-      p{
+      p {
         margin-bottom: 0.3rem;
       }
 
-      #reach{
+      #reach {
         font-size: 0.8rem;
       }
 
-      .phone{
+      .phone {
         font-size: 0.7rem;
       }
 
 
-      .fab{
+      .fab {
         padding: 0.6rem;
         font-size: 1.5rem;
         width: 3rem;
@@ -625,7 +670,7 @@
 
       }
 
-      .reg{
+      .reg {
         width: 6rem;
         margin-top: 0.3rem;
         font-size: 0.8rem;
@@ -633,7 +678,7 @@
 
     }
 
-    .footer2{
+    .footer2 {
       font-size: 0.45rem;
     }
 
@@ -690,7 +735,7 @@
       text-transform: initial;
     }
 
-    .card{
+    .card {
       margin-bottom: 1rem;
     }
 
@@ -703,11 +748,11 @@
       font-size: 0.4rem;
     }
 
-    span{
+    span {
       font-size: 0.3rem;
     }
 
-    .action{
+    .action {
       margin-top: 0.2rem;
       font-size: 0.6rem;
     }
