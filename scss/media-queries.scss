@@ -2,34 +2,6 @@
 @import "mixins";
 
 // MEDIA QUERIES
-// special screen size to fix navbar responsiveness
-@media (max-width: 1345px) {
-
-  .navbar {
-
-    #logo {
-      width: 130px;
-      height: auto;
-      margin-left: 1rem;
-    }
-
-    .navbar-nav {
-      margin-left: 12rem;
-      margin-top: 1rem;
-    }
-
-    #nav-icons {
-      margin-left: 8rem;
-      margin-right: -2rem;
-      margin-top: 1rem;
-      font-size: 1.2rem;
-    }
-
-    #search-nav {
-      font-size: 0.8rem;
-    }
-  }
-}
 
 //large screens
 @media (max-width: 1199.98px) {
@@ -45,14 +17,8 @@
       margin-left: 1rem;
     }
 
-    .navbar-nav {
-      margin-left: 10rem;
-      margin-top: 1rem;
-    }
 
     #nav-icons {
-      margin-left: 4rem;
-      margin-right: -2rem;
       margin-top: 1rem;
       font-size: 1.2rem;
     }

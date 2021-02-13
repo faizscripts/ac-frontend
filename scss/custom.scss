@@ -51,8 +51,8 @@ body {
   }
 
   .navbar-nav {
-    margin-left: 17rem;
-    margin-top: 1rem;
+    //margin-left: 17rem;
+    //margin-top: 1rem;
   }
 
   .navbar-collapse {
@@ -60,10 +60,6 @@ body {
     font-weight: 800;
   }
 
-  .nav-link:hover {
-    transition: border 0.3s ease-in-out 0.1s;
-    border-bottom: 2.5px solid $red;
-  }
 
   .active {
     transition: border 0.3s ease-in-out 1s;
@@ -75,10 +71,14 @@ body {
   }
 
   #nav-icons {
-    margin-left: 12rem;
-    margin-right: 0;
+    //margin-left: 12rem;
+    //margin-right: 0;
     margin-top: 1rem;
     font-size: 1.2rem;
+  }
+
+  #search-nav {
+    font-size: 0.8rem;
   }
 
   .notification {

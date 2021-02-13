@@ -41,17 +41,9 @@ body .to-top.active {
   height: auto;
   margin-left: 2rem;
 }
-.navbar .navbar-nav {
-  margin-left: 17rem;
-  margin-top: 1rem;
-}
 .navbar .navbar-collapse {
   text-transform: uppercase;
   font-weight: 800;
-}
-.navbar .nav-link:hover {
-  transition: border 0.3s ease-in-out 0.1s;
-  border-bottom: 2.5px solid #FF0000;
 }
 .navbar .active {
   transition: border 0.3s ease-in-out 1s;
@@ -61,10 +53,11 @@ body .to-top.active {
   text-transform: none;
 }
 .navbar #nav-icons {
-  margin-left: 12rem;
-  margin-right: 0;
   margin-top: 1rem;
   font-size: 1.2rem;
+}
+.navbar #search-nav {
+  font-size: 0.8rem;
 }
 .navbar .notification {
   position: relative;
@@ -412,26 +405,6 @@ body .to-top.active {
   font-size: 0.8rem;
 }
 
-@media (max-width: 1345px) {
-  .navbar #logo {
-    width: 130px;
-    height: auto;
-    margin-left: 1rem;
-  }
-  .navbar .navbar-nav {
-    margin-left: 12rem;
-    margin-top: 1rem;
-  }
-  .navbar #nav-icons {
-    margin-left: 8rem;
-    margin-right: -2rem;
-    margin-top: 1rem;
-    font-size: 1.2rem;
-  }
-  .navbar #search-nav {
-    font-size: 0.8rem;
-  }
-}
 @media (max-width: 1199.98px) {
   body {
     font-size: 0.85rem;
@@ -442,13 +415,7 @@ body .to-top.active {
     height: auto;
     margin-left: 1rem;
   }
-  .navbar .navbar-nav {
-    margin-left: 10rem;
-    margin-top: 1rem;
-  }
   .navbar #nav-icons {
-    margin-left: 4rem;
-    margin-right: -2rem;
     margin-top: 1rem;
     font-size: 1.2rem;
   }

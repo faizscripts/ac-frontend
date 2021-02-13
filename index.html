@@ -40,59 +40,57 @@
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <div class="d-flex flex-column flex-lg-row" id="nav-menu">
-                <ul class="navbar-nav mb-2 order-last order-lg-first">
-                    <li class="nav-item mx-2">
-                        <a class="nav-link active pb-0" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item mx-2 dropdown">
-                        <a class="nav-link dropdown-toggle pb-0" href="#" id="navbarDropdown" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            Categories
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Brands</a></li>
-                            <li><a class="dropdown-item" href="#">Cases</a></li>
-                            <li><a class="dropdown-item" href="#">Power</a></li>
-                            <li><a class="dropdown-item" href="#">Audio</a></li>
-                            <li><a class="dropdown-item" href="#">Watches</a></li>
-                            <li><a class="dropdown-item" href="#">Protectors</a></li>
-                            <li><a class="dropdown-item" href="#">Camera Accessories</a></li>
-                            <li><a class="dropdown-item" href="#">Car Accessories</a></li>
-                            <li><a class="dropdown-item" href="#">Computer Accessories</a></li>
-                            <li><a class="dropdown-item" href="#">TV Accessories</a></li>
-                            <li><a class="dropdown-item" href="#">Others</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link pb-0" href="#">FAQ's</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a class="nav-link pb-0" href="#">Contact</a>
-                    </li>
-                </ul>
+        <div class="collapse navbar-collapse flex-column flex-lg-row mt-1" id="navbarSupportedContent">
 
-
-                <div id="nav-icons" class="order-first order-lg-last row justify-content-center">
-                    <form class="form-inline d-flex col-10 col-md-7 col-lg-10 col-xl-11 col-xxl-12">
-                        <div class="input-group mb-3">
-                            <label for="search-nav"></label>
-                            <input type="text" class="form-control" placeholder="Search" id="search-nav">
-                            <div class="input-group-append">
+            <div id="nav-icons" class="order-lg-last ml-lg-auto row justify-content-center">
+                <form class="form-inline d-flex col-10 col-md-7 col-lg-10 col-xl-11">
+                    <div class="input-group mb-3">
+                        <label for="search-nav"></label>
+                        <input type="text" class="form-control" placeholder="Search" id="search-nav">
+                        <div class="input-group-append">
                     <span class="input-group-text notification">
                         <i class="bi bi-search mx-2 "></i>
                     </span>
-                            </div>
                         </div>
-                        <i class="bi bi-heart mx-2 notification mt-1" data-bs-toggle="modal"
-                           data-bs-target="#favs"><span class="tip">4</span></i>
-                        <i class="bi bi-cart3 mx-2 notification mt-1" data-bs-toggle="modal"
-                           data-bs-target="#cart"><span class="tip">2</span></i>
-                    </form>
-
-                </div>
+                    </div>
+                    <i class="bi bi-heart mx-2 notification mt-1" data-bs-toggle="modal"
+                       data-bs-target="#favs"><span class="tip">4</span></i>
+                    <i class="bi bi-cart3 mx-2 notification mt-1" data-bs-toggle="modal"
+                       data-bs-target="#cart"><span class="tip">2</span></i>
+                </form>
             </div>
+
+            <ul class="navbar-nav mb-2 order-lg-first mx-lg-auto">
+                <li class="nav-item mx-2">
+                    <a class="nav-link active pb-0" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-2 dropdown">
+                    <a class="nav-link dropdown-toggle pb-0" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Brands</a></li>
+                        <li><a class="dropdown-item" href="#">Cases</a></li>
+                        <li><a class="dropdown-item" href="#">Power</a></li>
+                        <li><a class="dropdown-item" href="#">Audio</a></li>
+                        <li><a class="dropdown-item" href="#">Watches</a></li>
+                        <li><a class="dropdown-item" href="#">Protectors</a></li>
+                        <li><a class="dropdown-item" href="#">Camera Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Car Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Computer Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">TV Accessories</a></li>
+                        <li><a class="dropdown-item" href="#">Others</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link pb-0" href="#">FAQ's</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link pb-0" href="#">Contact</a>
+                </li>
+            </ul>
+
 
         </div>
     </div>
