@@ -156,7 +156,6 @@ body .to-top.active {
   background: #f4f4f4;
 }
 #why .why-title {
-  margin: 1rem 0 1.5rem 0;
   color: #111111;
   font-size: 1.5rem;
   font-weight: 800;
@@ -171,7 +170,7 @@ body .to-top.active {
   font-size: 2rem;
 }
 #why p {
-  margin-top: 1rem;
+  margin: 0.5rem 0;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -444,7 +443,7 @@ body .to-top.active {
     font-size: 1.5rem;
   }
   #why p {
-    margin-top: 0.9rem;
+    margin: 0.5rem 0;
     font-size: 0.7rem;
   }
   #why span {
@@ -597,9 +596,6 @@ body .to-top.active {
     font-size: 0.9rem;
   }
 
-  #why .why-title {
-    margin: 0.8rem 0 1rem 0;
-  }
   #why p {
     margin-top: 0.5rem;
     font-size: 0.6rem;
@@ -779,7 +775,6 @@ body .to-top.active {
   }
 
   #why .why-title {
-    margin: 0.5rem 0 0.7rem 0;
     font-size: 1.2rem;
   }
   #why h5 {
@@ -789,7 +784,7 @@ body .to-top.active {
     font-size: 1rem;
   }
   #why p {
-    margin-top: 0.2rem;
+    margin: 0.2rem 0;
     font-size: 0.6rem;
   }
   #why span {
