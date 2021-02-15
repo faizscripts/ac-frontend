@@ -205,7 +205,6 @@ body {
   background: $grey;
 
   .why-title {
-    //margin: 1rem 0;
     color: #111111;
     font-size: 1.5rem;
     font-weight: 800;
@@ -219,7 +218,7 @@ body {
 
   i{
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   p{
@@ -287,13 +286,9 @@ body {
   }
 
   .card {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out;
+    @include shadow;
   }
 
-  .card:hover {
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
-  }
 
   .card-body {
     padding: 0.5rem;
@@ -526,6 +521,129 @@ body {
     background: $black;
     color: white;
     font-size: 0.8rem;
+  }
+}
+
+
+#checkout-body{
+  background: $grey;
+  display: flex;
+
+  #checkout-main{
+    flex-basis: 70vw;
+    margin-top: 7rem;
+
+    .card {
+      margin-bottom: 2rem;
+      @include shadow;
+      @include pointerRemove;
+    }
+
+    .card-header{
+      background: white;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+
+    label[required]:after{
+      content: ' *';
+    }
+
+    input[placeholder], textarea[placeholder]{
+      font-size: 0.8rem;
+    }
+
+    option{
+      font-size: 0.8rem;
+    }
+
+    .optional{
+      font-size: 0.7rem;
+    }
+
+    .form-check-label{
+      font-size: 0.93rem;
+    }
+
+    #add-num{
+      text-align: right;
+      @include pointer;
+    }
+
+    .final-text{
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+
+    .final-price{
+      font-weight: bolder;
+      font-size: 1.2rem;
+    }
+
+    span{
+      text-transform: lowercase;
+      font-weight: normal;
+    }
+
+
+    #placeOrder{
+      margin-top: 1rem;
+      width: 45rem;
+      font-weight: 800;
+    }
+  }
+
+  #checkout-sidebar {
+    flex-basis: 30vw;
+    margin-top: 7rem;
+
+    #divForHelp{
+      position: sticky;
+      top: 6rem;
+      z-index: 2;
+    }
+
+    #help-button{
+      width: 16rem;
+      font-weight: 800;
+    }
+
+    .card{
+      @include pointerRemove;
+      position: sticky;
+      top: 10rem;
+      z-index: 3;
+    }
+
+    .card-header{
+      background: white;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .img-fluid{
+      width: 4rem;
+      height: 4rem;
+      @include resizeImage;
+    }
+
+    .cart-details{
+      font-size: 0.8rem;
+    }
+
+    .checkoutItemName{
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    hr{
+      color: rgba(0, 0, 0, 0.5);
+    }
+
   }
 }
 

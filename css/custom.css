@@ -167,7 +167,7 @@ body .to-top.active {
 }
 #why i {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 #why p {
   margin: 0.5rem 0;
@@ -412,6 +412,114 @@ body .to-top.active {
   background: #171717;
   color: white;
   font-size: 0.8rem;
+}
+
+#checkout-body {
+  background: #f4f4f4;
+  display: flex;
+}
+#checkout-body #checkout-main {
+  flex-basis: 70vw;
+  margin-top: 7rem;
+}
+#checkout-body #checkout-main .card {
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+#checkout-body #checkout-main .card:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+}
+#checkout-body #checkout-main .card:hover {
+  cursor: default;
+}
+#checkout-body #checkout-main .card-header {
+  background: white;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+#checkout-body #checkout-main label[required]:after {
+  content: " *";
+}
+#checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder] {
+  font-size: 0.8rem;
+}
+#checkout-body #checkout-main option {
+  font-size: 0.8rem;
+}
+#checkout-body #checkout-main .optional {
+  font-size: 0.7rem;
+}
+#checkout-body #checkout-main .form-check-label {
+  font-size: 0.93rem;
+}
+#checkout-body #checkout-main #add-num {
+  text-align: right;
+}
+#checkout-body #checkout-main #add-num:hover {
+  cursor: pointer;
+}
+#checkout-body #checkout-main .final-text {
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+#checkout-body #checkout-main .final-price {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+#checkout-body #checkout-main span {
+  text-transform: lowercase;
+  font-weight: normal;
+}
+#checkout-body #checkout-main #placeOrder {
+  margin-top: 1rem;
+  width: 45rem;
+  font-weight: 800;
+}
+#checkout-body #checkout-sidebar {
+  flex-basis: 30vw;
+  margin-top: 7rem;
+}
+#checkout-body #checkout-sidebar #divForHelp {
+  position: sticky;
+  top: 6rem;
+  z-index: 2;
+}
+#checkout-body #checkout-sidebar #help-button {
+  width: 16rem;
+  font-weight: 800;
+}
+#checkout-body #checkout-sidebar .card {
+  position: sticky;
+  top: 10rem;
+  z-index: 3;
+}
+#checkout-body #checkout-sidebar .card:hover {
+  cursor: default;
+}
+#checkout-body #checkout-sidebar .card-header {
+  background: white;
+  font-weight: 800;
+  text-align: center;
+}
+#checkout-body #checkout-sidebar .img-fluid {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  object-position: center center;
+}
+#checkout-body #checkout-sidebar .cart-details {
+  font-size: 0.8rem;
+}
+#checkout-body #checkout-sidebar .checkoutItemName {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#checkout-body #checkout-sidebar hr {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1199.98px) {
