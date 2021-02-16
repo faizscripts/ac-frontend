@@ -151,7 +151,7 @@
 
     #checkout-main {
       flex-basis: 70vw;
-      margin-top: 6.5rem;
+      margin-top: 2rem;
 
       .card-header {
         font-size: 1.1rem;
@@ -188,7 +188,7 @@
 
     #checkout-sidebar {
       flex-basis: 30vw;
-      margin-top: 6.5rem;
+      margin-top: 2rem;
 
       #help-button {
         width: 14rem;
@@ -484,7 +484,7 @@
 
     #checkout-main {
       flex-basis: 65vw;
-      margin-top: 5.5rem;
+      margin-top: 2rem;
 
       .card-header {
         font-size: 0.9rem;
@@ -499,7 +499,7 @@
       }
 
       .optional {
-        font-size: 0.65rem;
+        font-size: 0.55rem;
       }
 
       #add-num{
@@ -531,7 +531,7 @@
 
     #checkout-sidebar {
       flex-basis: 35vw;
-      margin-top: 5.5rem;
+      margin-top: 2rem;
 
       #divForHelp{
         top: 5rem;
@@ -582,6 +582,11 @@
     .to-top.active {
       bottom: 30px;
     }
+  }
+
+  // Extra Navbar
+  #extraNav{
+    font-size: 0.5rem;
   }
 
   #favs {
@@ -659,31 +664,35 @@
   }
 
   #tiles {
+    margin-top: 1rem;
+
     .card-footer {
       text-transform: initial;
     }
   }
 
   #why {
+    margin-top: 1rem;
+
     .why-title {
-      font-size: 1.2rem;
+      font-size: 0.9rem;
     }
 
     h5 {
-      font-size: 0.77rem;
+      font-size: 0.7rem;
     }
 
     i {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
 
     p {
       margin: 0.2rem 0;
-      font-size: 0.6rem;
+      font-size: 0.45rem;
     }
 
     span {
-      font-size: 0.4rem;
+      font-size: 0.3rem;
     }
 
   }
@@ -839,46 +848,30 @@
       flex-basis: 100vw;
 
       .card {
-        margin-bottom: 2rem;
-        @include shadow;
-        @include pointerRemove;
-      }
-
-      .card-header{
-        background: white;
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        font-weight: 700;
-      }
-
-
-      label[required]:after{
-        content: ' *';
+        margin-bottom: 1.5rem;
       }
 
       input[placeholder], textarea[placeholder], select, option, .form-check-label{
-        font-size: 0.8rem;
+        font-size: 0.65rem;
       }
 
 
       .optional{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
       }
 
 
       #add-num{
-        text-align: right;
-        @include pointer;
+        font-size: 0.55rem;
       }
 
       .final-text{
-        text-transform: uppercase;
-        font-weight: bolder;
+        font-weight: bold;
       }
 
       .final-price{
-        font-weight: bolder;
-        font-size: 1.2rem;
+        font-weight: bold;
+        font-size: 1rem;
       }
 
       span{
@@ -896,7 +889,7 @@
 
     #checkout-sidebar {
       flex-basis: 100vw;
-      margin-top: 5rem;
+      margin-top: 1rem;
 
 
       #divForHelp{
@@ -915,7 +908,7 @@
 
 
       .img-fluid{
-        width: 4rem;
+        width: 5rem;
         height: 4rem;
       }
 
@@ -961,7 +954,6 @@
   }
 
   #tiles {
-    margin-top: 4rem;
 
     .image-tile {
       height: 5rem;
@@ -1066,7 +1058,6 @@
 
     #checkout-sidebar {
       flex-basis: 100vw;
-      margin-top: 4.5rem;
 
 
       #divForHelp{
