@@ -8,6 +8,27 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
 
+  //Pre Loader
+  .loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out;
+  }
+
+  .loader-finish{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
   //  Back to top
   .to-top {
     background: #171717;
@@ -53,7 +74,7 @@ body {
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
 
   #logo {
     width: 155px;

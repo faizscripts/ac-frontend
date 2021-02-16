@@ -1,3 +1,18 @@
+// Pre Loader
+window.addEventListener("load", () => {
+    let loader = document.querySelector(".loader")
+    loader.classList.add("loader-finish");
+});
+
+
+
+
+
+
+
+
+
+
 // Back to top button
 const toTop = document.querySelector(".to-top");
 
