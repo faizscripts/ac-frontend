@@ -39,7 +39,7 @@
     }
 
     i {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
     }
 
     p {
@@ -146,6 +146,74 @@
 
 
   }
+
+  #checkout-body {
+
+    #checkout-main {
+      flex-basis: 70vw;
+      margin-top: 6.5rem;
+
+      .card-header {
+        font-size: 1.1rem;
+      }
+
+      input[placeholder], textarea[placeholder], select, option, .form-check-label {
+        font-size: 0.7rem;
+      }
+
+      .optional {
+        font-size: 0.65rem;
+      }
+
+      .final-text {
+        font-size: 0.9rem;
+      }
+
+      .final-price {
+        font-size: 1rem;
+      }
+
+      span {
+        text-transform: lowercase;
+        font-weight: normal;
+      }
+
+
+      #placeOrder {
+        font-size: 0.9rem;
+        width: 20rem;
+        font-weight: 700;
+      }
+    }
+
+    #checkout-sidebar {
+      flex-basis: 30vw;
+      margin-top: 6.5rem;
+
+      #help-button {
+        width: 14rem;
+      }
+
+      .img-fluid {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+
+      .cart-details {
+        font-size: 0.7rem;
+      }
+
+      hr {
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .btn-sm {
+        font-size: 0.65rem;
+      }
+
+    }
+  }
+
 }
 
 
@@ -410,6 +478,89 @@
       font-size: 0.65rem;
     }
 
+  }
+
+  #checkout-body {
+
+    #checkout-main {
+      flex-basis: 65vw;
+      margin-top: 5.5rem;
+
+      .card-header {
+        font-size: 0.9rem;
+      }
+
+      label{
+        font-size: 0.7rem;
+      }
+
+      input[placeholder], textarea[placeholder], select, option, .form-check-label {
+        font-size: 0.6rem;
+      }
+
+      .optional {
+        font-size: 0.65rem;
+      }
+
+      #add-num{
+        font-size: 0.6rem;
+
+      }
+
+      .final-text {
+        font-size: 0.75rem;
+        font-weight: bold;
+      }
+
+      .final-price {
+        font-size: 0.85rem;
+        font-weight: bold;
+      }
+
+      span {
+        font-size: 0.6rem;
+      }
+
+
+      #placeOrder {
+        font-size: 0.8rem;
+        width: 15rem;
+        font-weight: 700;
+      }
+    }
+
+    #checkout-sidebar {
+      flex-basis: 35vw;
+      margin-top: 5.5rem;
+
+      #divForHelp{
+        top: 5rem;
+      }
+
+      #help-button {
+        width: 10rem;
+        font-size: 0.8rem;
+      }
+
+      .card{
+        top: 8.5rem;
+      }
+
+      .img-fluid {
+        width: 3rem;
+        height: 3rem;
+      }
+
+      .cart-details {
+        font-size: 0.6rem;
+      }
+
+
+      .btn-sm {
+        font-size: 0.65rem;
+      }
+
+    }
   }
 }
 
@@ -678,6 +829,117 @@
     }
 
   }
+
+  #checkout-body{
+    background: $grey;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+    #checkout-main{
+      flex-basis: 100vw;
+
+      .card {
+        margin-bottom: 2rem;
+        @include shadow;
+        @include pointerRemove;
+      }
+
+      .card-header{
+        background: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+
+      label[required]:after{
+        content: ' *';
+      }
+
+      input[placeholder], textarea[placeholder], select, option, .form-check-label{
+        font-size: 0.8rem;
+      }
+
+
+      .optional{
+        font-size: 0.7rem;
+      }
+
+
+      #add-num{
+        text-align: right;
+        @include pointer;
+      }
+
+      .final-text{
+        text-transform: uppercase;
+        font-weight: bolder;
+      }
+
+      .final-price{
+        font-weight: bolder;
+        font-size: 1.2rem;
+      }
+
+      span{
+        text-transform: lowercase;
+        font-weight: normal;
+      }
+
+
+      #placeOrder{
+        margin-top: 1rem;
+        //width: 30rem;
+        font-weight: 700;
+      }
+    }
+
+    #checkout-sidebar {
+      flex-basis: 100vw;
+      margin-top: 5rem;
+
+
+      #divForHelp{
+        position: static;
+      }
+
+      #help-button{
+        width: 8rem;
+        font-weight: 700;
+      }
+
+      .card{
+        position: static;
+
+      }
+
+
+      .img-fluid{
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .cart-details{
+        font-size: 0.8rem;
+      }
+
+      .checkoutItemName{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      hr{
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .btn-sm{
+        font-size: 0.75rem;
+      }
+
+    }
+  }
 }
 
 
@@ -752,5 +1014,84 @@
       font-size: 0.6rem;
     }
 
+  }
+
+  #checkout-body{
+
+    #checkout-main{
+      margin-top: 1.5rem;
+
+      .card {
+        margin-bottom: 1.5rem;
+      }
+
+      .card-header{
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      input[placeholder], textarea[placeholder], select, option, .form-check-label{
+        font-size: 0.6rem;
+      }
+
+
+      .optional{
+        font-size: 0.5rem;
+      }
+
+
+      #add-num{
+        font-size: 0.55rem;
+      }
+
+      .final-text{
+        font-weight: bold;
+      }
+
+      .final-price{
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      span{
+        font-size: 0.4rem;
+      }
+
+
+      #placeOrder{
+        margin-top: 1rem;
+        font-weight: 700;
+      }
+    }
+
+    #checkout-sidebar {
+      flex-basis: 100vw;
+      margin-top: 4.5rem;
+
+
+      #divForHelp{
+        position: static;
+      }
+
+      #help-button{
+        width: 6rem;
+        font-size: 0.5rem;
+      }
+
+
+      .img-fluid{
+        width: 3rem;
+        height: 3rem;
+      }
+
+      .cart-details{
+        font-size: 0.6rem;
+      }
+
+      .btn-sm{
+        font-size: 0.5rem;
+      }
+
+    }
   }
 }

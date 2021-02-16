@@ -442,17 +442,11 @@ body .to-top.active {
 #checkout-body #checkout-main label[required]:after {
   content: " *";
 }
-#checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder] {
-  font-size: 0.8rem;
-}
-#checkout-body #checkout-main option {
+#checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
   font-size: 0.8rem;
 }
 #checkout-body #checkout-main .optional {
   font-size: 0.7rem;
-}
-#checkout-body #checkout-main .form-check-label {
-  font-size: 0.93rem;
 }
 #checkout-body #checkout-main #add-num {
   text-align: right;
@@ -474,8 +468,8 @@ body .to-top.active {
 }
 #checkout-body #checkout-main #placeOrder {
   margin-top: 1rem;
-  width: 45rem;
-  font-weight: 800;
+  width: 30rem;
+  font-weight: 700;
 }
 #checkout-body #checkout-sidebar {
   flex-basis: 30vw;
@@ -521,6 +515,9 @@ body .to-top.active {
 #checkout-body #checkout-sidebar hr {
   color: rgba(0, 0, 0, 0.5);
 }
+#checkout-body #checkout-sidebar .btn-sm {
+  font-size: 0.75rem;
+}
 
 @media (max-width: 1199.98px) {
   body {
@@ -548,7 +545,7 @@ body .to-top.active {
     font-size: 0.9rem;
   }
   #why i {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
   #why p {
     margin: 0.5rem 0;
@@ -622,6 +619,55 @@ body .to-top.active {
   }
   #product-view .bullets {
     font-size: 0.8rem;
+  }
+
+  #checkout-body #checkout-main {
+    flex-basis: 70vw;
+    margin-top: 6.5rem;
+  }
+  #checkout-body #checkout-main .card-header {
+    font-size: 1.1rem;
+  }
+  #checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
+    font-size: 0.7rem;
+  }
+  #checkout-body #checkout-main .optional {
+    font-size: 0.65rem;
+  }
+  #checkout-body #checkout-main .final-text {
+    font-size: 0.9rem;
+  }
+  #checkout-body #checkout-main .final-price {
+    font-size: 1rem;
+  }
+  #checkout-body #checkout-main span {
+    text-transform: lowercase;
+    font-weight: normal;
+  }
+  #checkout-body #checkout-main #placeOrder {
+    font-size: 0.9rem;
+    width: 20rem;
+    font-weight: 700;
+  }
+  #checkout-body #checkout-sidebar {
+    flex-basis: 30vw;
+    margin-top: 6.5rem;
+  }
+  #checkout-body #checkout-sidebar #help-button {
+    width: 14rem;
+  }
+  #checkout-body #checkout-sidebar .img-fluid {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  #checkout-body #checkout-sidebar .cart-details {
+    font-size: 0.7rem;
+  }
+  #checkout-body #checkout-sidebar hr {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  #checkout-body #checkout-sidebar .btn-sm {
+    font-size: 0.65rem;
   }
 }
 @media (max-width: 991.98px) {
@@ -806,6 +852,66 @@ body .to-top.active {
     margin-top: 1.5rem;
   }
   #footer .footer2 {
+    font-size: 0.65rem;
+  }
+
+  #checkout-body #checkout-main {
+    flex-basis: 65vw;
+    margin-top: 5.5rem;
+  }
+  #checkout-body #checkout-main .card-header {
+    font-size: 0.9rem;
+  }
+  #checkout-body #checkout-main label {
+    font-size: 0.7rem;
+  }
+  #checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
+    font-size: 0.6rem;
+  }
+  #checkout-body #checkout-main .optional {
+    font-size: 0.65rem;
+  }
+  #checkout-body #checkout-main #add-num {
+    font-size: 0.6rem;
+  }
+  #checkout-body #checkout-main .final-text {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+  #checkout-body #checkout-main .final-price {
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+  #checkout-body #checkout-main span {
+    font-size: 0.6rem;
+  }
+  #checkout-body #checkout-main #placeOrder {
+    font-size: 0.8rem;
+    width: 15rem;
+    font-weight: 700;
+  }
+  #checkout-body #checkout-sidebar {
+    flex-basis: 35vw;
+    margin-top: 5.5rem;
+  }
+  #checkout-body #checkout-sidebar #divForHelp {
+    top: 5rem;
+  }
+  #checkout-body #checkout-sidebar #help-button {
+    width: 10rem;
+    font-size: 0.8rem;
+  }
+  #checkout-body #checkout-sidebar .card {
+    top: 8.5rem;
+  }
+  #checkout-body #checkout-sidebar .img-fluid {
+    width: 3rem;
+    height: 3rem;
+  }
+  #checkout-body #checkout-sidebar .cart-details {
+    font-size: 0.6rem;
+  }
+  #checkout-body #checkout-sidebar .btn-sm {
     font-size: 0.65rem;
   }
 }
@@ -999,6 +1105,96 @@ body .to-top.active {
   #footer .footer2 {
     font-size: 0.45rem;
   }
+
+  #checkout-body {
+    background: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  #checkout-body #checkout-main {
+    flex-basis: 100vw;
+  }
+  #checkout-body #checkout-main .card {
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  #checkout-body #checkout-main .card:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  }
+  #checkout-body #checkout-main .card:hover {
+    cursor: default;
+  }
+  #checkout-body #checkout-main .card-header {
+    background: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  #checkout-body #checkout-main label[required]:after {
+    content: " *";
+  }
+  #checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
+    font-size: 0.8rem;
+  }
+  #checkout-body #checkout-main .optional {
+    font-size: 0.7rem;
+  }
+  #checkout-body #checkout-main #add-num {
+    text-align: right;
+  }
+  #checkout-body #checkout-main #add-num:hover {
+    cursor: pointer;
+  }
+  #checkout-body #checkout-main .final-text {
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  #checkout-body #checkout-main .final-price {
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  #checkout-body #checkout-main span {
+    text-transform: lowercase;
+    font-weight: normal;
+  }
+  #checkout-body #checkout-main #placeOrder {
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+  #checkout-body #checkout-sidebar {
+    flex-basis: 100vw;
+    margin-top: 5rem;
+  }
+  #checkout-body #checkout-sidebar #divForHelp {
+    position: static;
+  }
+  #checkout-body #checkout-sidebar #help-button {
+    width: 8rem;
+    font-weight: 700;
+  }
+  #checkout-body #checkout-sidebar .card {
+    position: static;
+  }
+  #checkout-body #checkout-sidebar .img-fluid {
+    width: 4rem;
+    height: 4rem;
+  }
+  #checkout-body #checkout-sidebar .cart-details {
+    font-size: 0.8rem;
+  }
+  #checkout-body #checkout-sidebar .checkoutItemName {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  #checkout-body #checkout-sidebar hr {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  #checkout-body #checkout-sidebar .btn-sm {
+    font-size: 0.75rem;
+  }
 }
 @media (max-width: 575.98px) {
   body {
@@ -1053,6 +1249,61 @@ body .to-top.active {
   .featured .action {
     margin-top: 0.2rem;
     font-size: 0.6rem;
+  }
+
+  #checkout-body #checkout-main {
+    margin-top: 1.5rem;
+  }
+  #checkout-body #checkout-main .card {
+    margin-bottom: 1.5rem;
+  }
+  #checkout-body #checkout-main .card-header {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  #checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
+    font-size: 0.6rem;
+  }
+  #checkout-body #checkout-main .optional {
+    font-size: 0.5rem;
+  }
+  #checkout-body #checkout-main #add-num {
+    font-size: 0.55rem;
+  }
+  #checkout-body #checkout-main .final-text {
+    font-weight: bold;
+  }
+  #checkout-body #checkout-main .final-price {
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  #checkout-body #checkout-main span {
+    font-size: 0.4rem;
+  }
+  #checkout-body #checkout-main #placeOrder {
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+  #checkout-body #checkout-sidebar {
+    flex-basis: 100vw;
+    margin-top: 4.5rem;
+  }
+  #checkout-body #checkout-sidebar #divForHelp {
+    position: static;
+  }
+  #checkout-body #checkout-sidebar #help-button {
+    width: 6rem;
+    font-size: 0.5rem;
+  }
+  #checkout-body #checkout-sidebar .img-fluid {
+    width: 3rem;
+    height: 3rem;
+  }
+  #checkout-body #checkout-sidebar .cart-details {
+    font-size: 0.6rem;
+  }
+  #checkout-body #checkout-sidebar .btn-sm {
+    font-size: 0.5rem;
   }
 }
 

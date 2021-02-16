@@ -551,21 +551,15 @@ body {
       content: ' *';
     }
 
-    input[placeholder], textarea[placeholder]{
+    input[placeholder], textarea[placeholder], select, option, .form-check-label{
       font-size: 0.8rem;
     }
 
-    option{
-      font-size: 0.8rem;
-    }
 
     .optional{
       font-size: 0.7rem;
     }
 
-    .form-check-label{
-      font-size: 0.93rem;
-    }
 
     #add-num{
       text-align: right;
@@ -590,8 +584,8 @@ body {
 
     #placeOrder{
       margin-top: 1rem;
-      width: 45rem;
-      font-weight: 800;
+      width: 30rem;
+      font-weight: 700;
     }
   }
 
@@ -642,6 +636,10 @@ body {
 
     hr{
       color: rgba(0, 0, 0, 0.5);
+    }
+
+    .btn-sm{
+      font-size: 0.75rem;
     }
 
   }
