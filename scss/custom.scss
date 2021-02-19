@@ -7,9 +7,10 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background: $grey;
 
   //Pre Loader
-  .loader{
+  .loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +24,7 @@ body {
     transition: opacity 0.5s ease-out;
   }
 
-  .loader-finish{
+  .loader-finish {
     opacity: 0;
     pointer-events: none;
   }
@@ -56,13 +57,12 @@ body {
   }
 }
 
-
-.card {
-  @include pointer;
+.index {
+  background: white;
 }
 
-// Extra Navbar
-#extraNav{
+
+#extraNav {
   background: $grey;
   display: flex;
   justify-content: space-around;
@@ -247,17 +247,17 @@ body {
     display: inline;
   }
 
-  i{
+  i {
     font-size: 1rem;
   }
 
-  p{
+  p {
     margin: 0.5rem 0;
     text-align: center;
     font-size: 0.8rem;
   }
 
-  span{
+  span {
     display: block;
     font-size: 0.6rem;
   }
@@ -271,6 +271,7 @@ body {
 
   .card {
     text-transform: uppercase;
+    @include pointer;
   }
 
   .image-tile {
@@ -319,43 +320,7 @@ body {
     @include shadow;
   }
 
-
-  .card-body {
-    padding: 0.5rem;
-  }
-
-  .card-title {
-    font-size: 0.75rem;
-    font-weight: bold;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-  }
-
-
-  .card-text {
-    font-size: 0.75rem;
-    font-weight: bold;
-  }
-
-  span {
-    margin-left: 0.2rem;
-    font-size: 0.7rem;
-    font-weight: normal;
-    text-decoration: line-through $red;
-  }
-
-  .card-img-top {
-    height: 14rem;
-    @include resizeImage
-  }
-
-  .action {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5rem;
-  }
+  @include featuredCards;
 }
 
 
@@ -476,11 +441,12 @@ body {
 #footer {
 
   .footer1 {
-    background: $grey;
+    background: #3e3e3e;
 
     .info-heading {
+      color: white;
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 600;
       font-size: 1.2rem;
       margin-left: 2rem;
     }
@@ -491,16 +457,18 @@ body {
 
     li {
       list-style-type: none;
+      font-size: 0.9rem;
 
       a {
         text-decoration: none;
-        color: $black;
+        color: white;
       }
     }
 
     #reach {
+      color: white;
       text-transform: uppercase;
-      font-weight: 800;
+      font-weight: 600;
       font-size: 1.2rem;
     }
 
@@ -555,11 +523,11 @@ body {
 }
 
 
-#checkout-body{
+#checkout-body {
   background: $grey;
   display: flex;
 
-  #checkout-main{
+  #checkout-main {
     flex-basis: 70vw;
     margin-top: 2rem;
 
@@ -569,7 +537,7 @@ body {
       @include pointerRemove;
     }
 
-    .card-header{
+    .card-header {
       background: white;
       text-transform: uppercase;
       font-size: 1.2rem;
@@ -577,42 +545,42 @@ body {
     }
 
 
-    label[required]:after{
+    label[required]:after {
       content: ' *';
     }
 
-    input[placeholder], textarea[placeholder], select, option, .form-check-label{
+    input[placeholder], textarea[placeholder], select, option, .form-check-label {
       font-size: 0.8rem;
     }
 
 
-    .optional{
+    .optional {
       font-size: 0.7rem;
     }
 
 
-    #add-num{
+    #add-num {
       text-align: right;
       @include pointer;
     }
 
-    .final-text{
+    .final-text {
       text-transform: uppercase;
       font-weight: bolder;
     }
 
-    .final-price{
+    .final-price {
       font-weight: bolder;
       font-size: 1.2rem;
     }
 
-    span{
+    span {
       text-transform: lowercase;
       font-weight: normal;
     }
 
 
-    #placeOrder{
+    #placeOrder {
       margin-top: 1rem;
       width: 30rem;
       font-weight: 700;
@@ -623,55 +591,172 @@ body {
     flex-basis: 30vw;
     margin-top: 2rem;
 
-    #divForHelp{
+    #divForHelp {
       position: sticky;
       top: 6rem;
       z-index: 2;
     }
 
-    #help-button{
+    #help-button {
       width: 16rem;
       font-weight: 800;
     }
 
-    .card{
+    .card {
       @include pointerRemove;
       position: sticky;
       top: 10rem;
       z-index: 3;
     }
 
-    .card-header{
+    .card-header {
       background: white;
       font-weight: 800;
       text-align: center;
     }
 
-    .img-fluid{
+    .img-fluid {
       width: 4rem;
       height: 4rem;
       @include resizeImage;
     }
 
-    .cart-details{
+    .cart-details {
       font-size: 0.8rem;
     }
 
-    .checkoutItemName{
+    .checkoutItemName {
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
     }
 
-    hr{
+    hr {
       color: rgba(0, 0, 0, 0.5);
     }
 
-    .btn-sm{
+    .btn-sm {
       font-size: 0.75rem;
     }
 
+  }
+}
+
+
+.tp {
+  margin-top: 1.2rem;
+
+  .card-header {
+    background: white;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  .row {
+    @include featuredCards;
+
+    .card {
+      @include shadow;
+    }
+
+    .card-img-top{
+      height: 11rem;
+    }
+
+    padding: 0 1rem 1rem 1rem;
+  }
+
+}
+
+
+.category-main {
+  display: flex;
+  margin-top: 2rem;
+
+  #category-filters {
+    flex-basis: 20vw;
+
+    .card{
+      position: sticky;
+      top: 6.2rem;
+      z-index: 3;
+    }
+
+
+    .price-heading{
+      font-weight: 700;
+      font-size: 0.8rem;
+
+      span{
+        font-weight: normal;
+        font-size: 0.6rem;
+      }
+
+      .btn{
+        font-size: 0.7rem;
+      }
+    }
+
+    .rangeM{
+      font-size: 0.7rem;
+    }
+
+    .form-check{
+      font-size: 0.8rem;
+    }
+
+
+
+
+
+  }
+
+  #category-display {
+    flex-basis: 80vw;
+
+    .card-header {
+      background: white;
+
+      .categoryTitle{
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 800;
+      }
+    }
+
+    .sortBy{
+      font-size: 0.8rem;
+      a{
+        text-decoration: none;
+        color: black;
+        font-size: 0.8rem;
+      }
+    }
+
+    .card-body {
+      padding-top: 0;
+    }
+
+    .mainContent{
+      @include featuredCards;
+      display: flex;
+
+      .col-2{
+        flex-basis: 14rem;
+        margin-top: 1.7rem;
+      }
+
+      .card{
+        @include shadow;
+      }
+
+      .card-img-top{
+        height: 12rem;
+      }
+
+    }
   }
 }
 

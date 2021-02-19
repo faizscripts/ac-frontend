@@ -5,14 +5,6 @@ window.addEventListener("load", () => {
 });
 
 
-
-
-
-
-
-
-
-
 // Back to top button
 const toTop = document.querySelector(".to-top");
 
@@ -58,7 +50,7 @@ smallImages[5].onclick = function () {
 
 //Add number in checkout page
 const addNum = document.querySelector('#add-num');
-addNum.addEventListener('click', ()=> {
+addNum.addEventListener('click', () => {
     let anotherNumber = document.querySelector('.anotherNumber');
     anotherNumber.innerHTML += `
        <input type="number" class="form-control mb-2" id="phone" aria-describedby="phone number" >

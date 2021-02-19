@@ -30,7 +30,7 @@
 
     <title>Home | Amazon Cellular</title>
 </head>
-<body>
+<body class="index">
 
 <!--Pre Loader-->
 <div class="loader">
@@ -44,7 +44,7 @@
         <div class="separator mx-2">|</div>
         <div>Log In</div>
         <div class="separator mx-2">|</div>
-        <div>Track Order </div>
+        <div>Track Order</div>
     </div>
     <div>
         <div class="">Need Help?</div>
@@ -89,8 +89,8 @@
                         Categories
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Brands</a></li>
-                        <li><a class="dropdown-item" href="#">Cases</a></li>
+                        <li><a class="dropdown-item" href="brands.html">Brands</a></li>
+                        <li><a class="dropdown-item" href="cases.html">Cases</a></li>
                         <li><a class="dropdown-item" href="#">Power</a></li>
                         <li><a class="dropdown-item" href="#">Audio</a></li>
                         <li><a class="dropdown-item" href="#">Watches</a></li>
@@ -116,14 +116,12 @@
 </nav>
 
 
-
-
 <!--Tiles-->
 <section id="tiles">
     <div class="container-fluid">
         <div class="row mt-2 mt-lg-0  my-lg-4">
             <div class="col-4 col-lg-2 mb-3 mb-lg-0 ">
-                <div class="card">
+                <div class="card" onclick="location.href='brands.html'">
                     <img src="img/home/brands.jfif" class="card-img-top image-tile" alt="...">
                     <div class="card-footer text-center">
                         Brands
@@ -132,7 +130,7 @@
             </div>
             <div class="col-4 col-lg-2 mb-3 mb-lg-0 ">
                 <div class="card">
-                    <img src="img/home/cases.jfif" class="card-img-top image-tile" alt="...">
+                    <img src="img/home/cases.jfif" class="card-img-top image-tile" alt="..." onclick="location.href='cases.html'">
                     <div class="card-footer text-center">
                         Cases
                     </div>
@@ -225,15 +223,8 @@
     <div class="row ">
         <div class="col-6 col-md-3 mt-2">
             <div class="why-subtitle">
-                <h5>Genuine Products </h5>
-                <i class="far fa-check-circle"></i>
-            </div>
-            <p>Be assured of quality products as we provide only the best and genuine products in the market</p>
-        </div>
-        <div class="col-6 col-md-3 mt-2">
-            <div class="why-subtitle">
                 <h5>Secure Payments </h5>
-                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-user-shield"></i>
             </div>
             <p>Payments are only done upon delivery. Receive what you had actually ordered for. No shortcuts!
                 <span>*Applies for orders within Nairobi and it environs</span></p>
@@ -248,8 +239,15 @@
         </div>
         <div class="col-6 col-md-3 mt-2">
             <div class="why-subtitle">
+                <h5>Genuine Products </h5>
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <p>Be assured of quality products as we provide only the best and genuine products in the market</p>
+        </div>
+        <div class="col-6 col-md-3 mt-2">
+            <div class="why-subtitle">
                 <h5>Best Prices </h5>
-                <i class="far fa-money-bill-alt"></i>
+                <i class="fas fa-money-bill-alt"></i>
             </div>
             <p>A true value for your money as we provide quality products at the most affordable rates.</p>
         </div>
@@ -264,10 +262,12 @@
     <button type="button" class="btn btn-sm see-all">SEE ALL</button>
     <div class="row">
         <div class="col-4 col-lg-2">
-            <div class="card" data-bs-toggle="modal" data-bs-target="#product-view">
-                <img src="img/home/watches.jfif" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="img/home/watches.jfif" class="card-img-top" alt="..." data-bs-toggle="modal"
+                     data-bs-target="#product-view">
                 <div class="card-body">
-                    <h6 class="card-title">Nillkin Amazing 2-in-1 HD full screen tempered glass</h6>
+                    <h6 class="card-title" data-bs-toggle="modal" data-bs-target="#product-view">Nillkin Amazing 2-in-1
+                        HD full screen tempered glass</h6>
                     <p class="card-text mb-0">ksh. 3200 <span>ksh. 4000</span></p>
                     <div class="action">
                         <i class="bi bi-heart"></i>
@@ -277,10 +277,12 @@
             </div>
         </div>
         <div class="col-4 col-lg-2">
-            <div class="card" data-bs-toggle="modal" data-bs-target="#product-view">
-                <img src="img/home/featured/2.jpg" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="img/home/featured/2.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+                     data-bs-target="#product-view">
                 <div class="card-body">
-                    <h6 class="card-title">Nillkin CamShield Armor case for Apple iPhone 12</h6>
+                    <h6 class="card-title" data-bs-toggle="modal" data-bs-target="#product-view">Nillkin CamShield Armor
+                        case for Apple iPhone 12</h6>
                     <p class="card-text mb-0">ksh. 800 </p>
                     <div class="action">
                         <i class="bi bi-heart"></i>
@@ -290,10 +292,12 @@
             </div>
         </div>
         <div class="col-4 col-lg-2">
-            <div class="card" data-bs-toggle="modal" data-bs-target="#product-view">
-                <img src="img/home/featured/3.jpg" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="img/home/featured/3.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+                     data-bs-target="#product-view">
                 <div class="card-body">
-                    <h6 class="card-title">Nillkin CamShield Pro cover case for Apple iPhone 12</h6>
+                    <h6 class="card-title" data-bs-toggle="modal" data-bs-target="#product-view">Nillkin CamShield Pro
+                        cover case for Apple iPhone 12</h6>
                     <p class="card-text mb-0">ksh. 1800 <span>ksh. 2500</span></p>
                     <div class="action">
                         <i class="bi bi-heart"></i>
@@ -303,10 +307,12 @@
             </div>
         </div>
         <div class="col-4 col-lg-2">
-            <div class="card" data-bs-toggle="modal" data-bs-target="#product-view">
-                <img src="img/home/featured/4.jpg" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="img/home/featured/4.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+                     data-bs-target="#product-view">
                 <div class="card-body">
-                    <h6 class="card-title">Nillkin CamShield Silky Magnetic silicon case for Apple iPhone 12, iPhone 12
+                    <h6 class="card-title" data-bs-toggle="modal" data-bs-target="#product-view">Nillkin CamShield Silky
+                        Magnetic silicon case for Apple iPhone 12, iPhone 12
                         Pro</h6>
                     <p class="card-text mb-0">ksh. 1500 <span>ksh. 2000</span></p>
                     <div class="action">
@@ -317,10 +323,12 @@
             </div>
         </div>
         <div class="col-4 col-lg-2">
-            <div class="card" data-bs-toggle="modal" data-bs-target="#product-view">
-                <img src="img/home/featured/5.jpg" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="img/home/featured/5.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+                     data-bs-target="#product-view">
                 <div class="card-body">
-                    <h6 class="card-title">Nillkin Textured nylon fiber case for Apple iPhone 12 Mini</h6>
+                    <h6 class="card-title" data-bs-toggle="modal" data-bs-target="#product-view">Nillkin Textured nylon
+                        fiber case for Apple iPhone 12 Mini</h6>
                     <p class="card-text mb-0">ksh. 3200 <span>ksh. 4000</span></p>
                     <div class="action">
                         <i class="bi bi-heart"></i>
@@ -330,10 +338,12 @@
             </div>
         </div>
         <div class="col-4 col-lg-2">
-            <div class="card" data-bs-toggle="modal" data-bs-target="#product-view">
-                <img src="img/home/featured/6.jpg" class="card-img-top" alt="...">
+            <div class="card">
+                <img src="img/home/featured/6.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+                     data-bs-target="#product-view">
                 <div class="card-body">
-                    <h6 class="card-title">Nillkin Flex PURE Pro MagSafe cover case for Apple iPhone 12 Mini</h6>
+                    <h6 class="card-title" data-bs-toggle="modal" data-bs-target="#product-view">Nillkin Flex PURE Pro
+                        MagSafe cover case for Apple iPhone 12 Mini</h6>
                     <p class="card-text mb-0">ksh. 500 <span>ksh. 1000</span></p>
                     <div class="action">
                         <i class="bi bi-heart"></i>
@@ -705,7 +715,9 @@
             </div>
             <div class="modal-footer d-flex justify-content-between">
                 <div>Total (ksh): <span class="total">3250</span></div>
-                <button type="button" class="btn btn-success" id="checkout" onclick="location.href='checkout.html'">Checkout</button>
+                <button type="button" class="btn btn-success" id="checkout" onclick="location.href='checkout.html'">
+                    Checkout
+                </button>
             </div>
         </div>
     </div>
@@ -771,7 +783,9 @@
                                             class="bi bi-cart3"></i></button>
                                 </div>
                                 <div class="mt-2 mt-md-1 mt-lg-2  d-flex justify-content-center">
-                                    <button class="btn btn-success checkout" onclick="location.href='checkout.html'"> Checkout</button>
+                                    <button class="btn btn-success checkout" onclick="location.href='checkout.html'">
+                                        Checkout
+                                    </button>
                                 </div>
                             </div>
                             <div id="share" class="text-center">

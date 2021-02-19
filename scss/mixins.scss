@@ -24,3 +24,51 @@
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
   }
 }
+
+
+@mixin featuredCards {
+
+  .card-body {
+    padding: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 0.75rem;
+    font-weight: bold;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    @include pointer;
+  }
+
+
+  .card-text {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  span {
+    margin-left: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: normal;
+    text-decoration: line-through $red;
+  }
+
+  .card-img-top {
+    height: 14rem;
+    @include resizeImage;
+    @include pointer;
+  }
+
+  .action {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+
+  .bi{
+    @include pointer;
+  }
+}
