@@ -700,7 +700,7 @@
   .category-main {
 
     #category-filters {
-      flex-basis: 25vw;
+      flex-basis: 30vw;
 
       .card {
         top: 5rem;
@@ -734,7 +734,7 @@
     }
 
     #category-display {
-      flex-basis: 75vw;
+      flex-basis: 70vw;
 
       .card-header {
         .categoryTitle {
@@ -774,6 +774,16 @@
         }
 
 
+      }
+    }
+  }
+
+  .findByFilter{
+    .input-group{
+      margin: 1rem 0;
+
+      input{
+        font-size: 0.5rem;
       }
     }
   }
@@ -1185,19 +1195,19 @@
 
 
       .price-heading{
-        font-size: 1rem;
+        font-size: 0.8rem;
 
         span{
           font-size: 0.7rem;
         }
 
         .btn{
-          font-size: 0.8rem;
+          font-size: 0.7rem;
         }
       }
 
       .rangeM{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
       }
 
       .h-50 {
@@ -1205,7 +1215,7 @@
       }
 
       .form-check{
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
 
     }
@@ -1221,6 +1231,20 @@
           flex-basis: 50%;
           margin-top: 0;
         }
+      }
+    }
+  }
+
+  .findByFilter{
+    .input-group{
+      margin: 1rem 0;
+
+      input{
+        font-size: 0.8rem;
+      }
+
+      i{
+        font-size: 0.8rem;
       }
     }
   }

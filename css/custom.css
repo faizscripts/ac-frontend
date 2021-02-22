@@ -741,6 +741,16 @@ body .to-top.active {
   font-size: 0.7rem;
 }
 
+.findByFilter .input-group {
+  margin: 1rem 0;
+}
+.findByFilter .input-group input {
+  font-size: 0.7rem;
+}
+.findByFilter .input-group i {
+  font-size: 0.6rem;
+}
+
 @media (max-width: 1199.98px) {
   body {
     font-size: 0.85rem;
@@ -1227,7 +1237,7 @@ body .to-top.active {
   }
 
   .category-main #category-filters {
-    flex-basis: 25vw;
+    flex-basis: 30vw;
   }
   .category-main #category-filters .card {
     top: 5rem;
@@ -1252,7 +1262,7 @@ body .to-top.active {
     font-size: 0.58rem;
   }
   .category-main #category-display {
-    flex-basis: 75vw;
+    flex-basis: 70vw;
   }
   .category-main #category-display .card-header .categoryTitle {
     font-size: 1rem;
@@ -1278,6 +1288,13 @@ body .to-top.active {
   }
   .category-main #category-display .mainContent .action {
     font-size: 1.15rem;
+  }
+
+  .findByFilter .input-group {
+    margin: 1rem 0;
+  }
+  .findByFilter .input-group input {
+    font-size: 0.5rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -1611,22 +1628,22 @@ body .to-top.active {
     position: static;
   }
   .category-main #category-filters .price-heading {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .category-main #category-filters .price-heading span {
     font-size: 0.7rem;
   }
   .category-main #category-filters .price-heading .btn {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .category-main #category-filters .rangeM {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .category-main #category-filters .h-50 {
     font-size: 0.85rem;
   }
   .category-main #category-filters .form-check {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .category-main #category-display {
     margin-top: 2rem;
@@ -1655,6 +1672,16 @@ body .to-top.active {
   .category-main #category-display .mainContent .col-lg-2 {
     flex-basis: 50%;
     margin-top: 0;
+  }
+
+  .findByFilter .input-group {
+    margin: 1rem 0;
+  }
+  .findByFilter .input-group input {
+    font-size: 0.8rem;
+  }
+  .findByFilter .input-group i {
+    font-size: 0.8rem;
   }
 }
 

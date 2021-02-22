@@ -766,5 +766,20 @@ body {
 }
 
 
+.findByFilter{
+  .input-group{
+    margin: 1rem 0;
+
+    input{
+      font-size: 0.7rem;
+    }
+
+    i{
+      font-size: 0.6rem;
+    }
+  }
+}
+
+
 @import "media-queries";
 
