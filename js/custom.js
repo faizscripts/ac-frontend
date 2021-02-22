@@ -53,7 +53,7 @@ const addNum = document.querySelector('#add-num');
 addNum.addEventListener('click', () => {
     let anotherNumber = document.querySelector('.anotherNumber');
     anotherNumber.innerHTML += `
-       <input type="number" class="form-control mb-2" id="phone" aria-describedby="phone number" >
+       <input type="number" class="form-control mb-2" id="phone" aria-describedby="phone number" placeholder="Add another number (optional)">
     `;
 })
 

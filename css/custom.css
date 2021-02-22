@@ -56,12 +56,15 @@ body .to-top.active {
   display: flex;
   justify-content: space-around;
   font-size: 0.8rem;
+  font-weight: 600;
   padding: 0.3rem 0;
 }
 
 .navbar {
   position: sticky;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 100;
 }
 .navbar #logo {
@@ -157,8 +160,9 @@ body .to-top.active {
   object-fit: cover;
   object-position: center center;
 }
-#cart .form-select:hover {
-  cursor: pointer;
+#cart .qty {
+  width: 7.3rem;
+  font-size: 0.8rem;
 }
 #cart .remove:hover {
   cursor: pointer;
@@ -190,7 +194,9 @@ body .to-top.active {
   text-transform: uppercase;
 }
 #why h5 {
+  font-weight: 700;
   display: inline;
+  text-transform: uppercase;
 }
 #why i {
   font-size: 1rem;
@@ -240,7 +246,7 @@ body .to-top.active {
   left: 0;
   bottom: -4px;
   height: 2px;
-  width: 70px;
+  width: 40px;
   background: #FF0000;
   content: "";
 }
@@ -277,7 +283,7 @@ body .to-top.active {
 }
 .featured span {
   margin-left: 0.2rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: normal;
   text-decoration: line-through #FF0000;
 }
@@ -592,7 +598,7 @@ body .to-top.active {
 }
 .tp .row span {
   margin-left: 0.2rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: normal;
   text-decoration: line-through #FF0000;
 }
@@ -697,7 +703,7 @@ body .to-top.active {
 }
 .category-main #category-display .mainContent span {
   margin-left: 0.2rem;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: normal;
   text-decoration: line-through #FF0000;
 }
@@ -717,8 +723,8 @@ body .to-top.active {
 .category-main #category-display .mainContent .bi:hover {
   cursor: pointer;
 }
-.category-main #category-display .mainContent .col-2 {
-  flex-basis: 14rem;
+.category-main #category-display .mainContent .col-lg-2 {
+  flex-basis: 20%;
   margin-top: 1.7rem;
 }
 .category-main #category-display .mainContent .card {
@@ -729,7 +735,10 @@ body .to-top.active {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
 }
 .category-main #category-display .mainContent .card-img-top {
-  height: 12rem;
+  height: 11.5rem;
+}
+.category-main #category-display .mainContent .card-title {
+  font-size: 0.7rem;
 }
 
 @media (max-width: 1199.98px) {
@@ -766,6 +775,13 @@ body .to-top.active {
   }
   #why span {
     font-size: 0.5rem;
+  }
+
+  #tiles .card-footer {
+    font-size: 0.7rem;
+  }
+  #tiles .image-tile {
+    height: 7rem;
   }
 
   .featured .card-title {
@@ -882,12 +898,65 @@ body .to-top.active {
   #checkout-body #checkout-sidebar .btn-sm {
     font-size: 0.65rem;
   }
-}
-@media (max-width: 991.98px) {
-  body {
-    font-size: 0.85rem;
+
+  .tp .row .card-img-top {
+    height: 9rem;
+  }
+  .tp .row .card-title {
+    font-size: 0.65rem;
+  }
+  .tp .row .card-text {
+    font-size: 0.6rem;
+  }
+  .tp .row .card-text span {
+    font-size: 0.5rem;
+  }
+  .tp .row .action {
+    font-size: 1.15rem;
   }
 
+  .category-main #category-filters .h-50 {
+    font-size: 0.64rem;
+  }
+  .category-main #category-display .categoryTitle {
+    font-size: 1.2rem;
+  }
+  .category-main #category-display .mainContent .col-lg-2 {
+    flex-basis: 25%;
+    margin-top: 1.5rem;
+  }
+  .category-main #category-display .mainContent .card-img-top {
+    height: 10.5rem;
+  }
+  .category-main #category-display .mainContent .card-title {
+    font-size: 0.7rem;
+  }
+  .category-main #category-display .mainContent span {
+    font-size: 0.6rem;
+  }
+  .category-main #category-display .mainContent .action {
+    font-size: 1.35rem;
+  }
+}
+@media (max-width: 991.98px) {
+  body .to-top {
+    bottom: 20px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+  }
+  body .to-top.active {
+    bottom: 30px;
+  }
+
+  .navbar {
+    font-size: 1rem;
+    top: -5px;
+  }
+  .navbar .container-fluid {
+    padding-top: 10px;
+  }
   .navbar #logo {
     width: 125px;
     height: auto;
@@ -914,43 +983,49 @@ body .to-top.active {
     font-size: 0.8rem;
   }
 
+  #favs .modal-title {
+    font-size: 1.2rem;
+  }
   #favs .prod-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #favs .img-thumbnail {
     height: 7rem;
     width: 7rem;
   }
   #favs .price {
+    font-size: 1rem;
     font-weight: 600;
   }
   #favs span {
-    font-size: 0.6rem;
-  }
-  #favs .form-select {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   #favs .remove {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   #favs .favs-footer {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
+  #cart .modal-title {
+    font-size: 1.2rem;
+  }
   #cart .prod-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #cart .img-thumbnail {
     height: 7rem;
     width: 7rem;
   }
   #cart .price {
+    font-size: 1rem;
     font-weight: 600;
   }
   #cart span {
     font-size: 0.6rem;
   }
-  #cart .form-select {
+  #cart .qty {
+    width: 5rem;
     font-size: 0.7rem;
   }
   #cart .remove {
@@ -963,12 +1038,19 @@ body .to-top.active {
     font-size: 0.9rem;
   }
 
+  #tiles .image-tile {
+    height: 10rem;
+  }
+  #tiles .card-footer {
+    font-size: 0.9rem;
+  }
+
   #why p {
     margin-top: 0.5rem;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
   #why span {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 
   .featured .card {
@@ -981,14 +1063,14 @@ body .to-top.active {
     font-size: 0.7rem;
   }
   .featured .card-img-top {
-    height: 14rem;
+    height: 12rem;
   }
   .featured span {
     font-size: 0.6rem;
   }
 
   #product-view .modal-title {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
   #product-view #prod-main-img {
     height: 17.5rem;
@@ -1001,18 +1083,18 @@ body .to-top.active {
     height: 2rem;
   }
   #product-view #prod-price {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 650;
   }
   #product-view #prod-price span {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
   #product-view .count .form-control {
     width: 4.5rem;
     font-size: 0.5rem;
   }
   #product-view .count .count-sub {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding-top: 0.2rem;
   }
   #product-view .count span {
@@ -1023,7 +1105,7 @@ body .to-top.active {
     font-size: 0.5rem;
   }
   #product-view .checkout {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
   #product-view #share .fab {
     padding: 0.3rem;
@@ -1037,25 +1119,25 @@ body .to-top.active {
     font-size: 0.9rem;
   }
   #product-view .bullets {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   #footer .footer1 .info-heading {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   #footer .footer1 li {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
   #footer .footer1 #reach {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   #footer .footer1 .phone {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   #footer .footer1 .fab {
     padding: 0.6rem;
     font-size: 1.5rem;
-    width: 3rem;
+    width: 2.7rem;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -1073,33 +1155,33 @@ body .to-top.active {
     margin-top: 2rem;
   }
   #checkout-body #checkout-main .card-header {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   #checkout-body #checkout-main label {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
   #checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
   #checkout-body #checkout-main .optional {
-    font-size: 0.55rem;
-  }
-  #checkout-body #checkout-main #add-num {
     font-size: 0.6rem;
   }
+  #checkout-body #checkout-main #add-num {
+    font-size: 0.7rem;
+  }
   #checkout-body #checkout-main .final-text {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: bold;
   }
   #checkout-body #checkout-main .final-price {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: bold;
   }
   #checkout-body #checkout-main span {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   #checkout-body #checkout-main #placeOrder {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 15rem;
     font-weight: 700;
   }
@@ -1112,7 +1194,7 @@ body .to-top.active {
   }
   #checkout-body #checkout-sidebar #help-button {
     width: 10rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #checkout-body #checkout-sidebar .card {
     top: 8.5rem;
@@ -1121,119 +1203,207 @@ body .to-top.active {
     width: 3rem;
     height: 3rem;
   }
+  #checkout-body #checkout-sidebar .card-header {
+    font-size: 0.9rem;
+  }
   #checkout-body #checkout-sidebar .cart-details {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   #checkout-body #checkout-sidebar .btn-sm {
+    font-size: 0.7rem;
+  }
+
+  .tp .card-header {
+    font-size: 1rem;
+  }
+  .tp .card-body {
+    padding-top: 0;
+  }
+  .tp .row .col-4 {
+    margin-top: 1rem;
+  }
+  .tp .row .card-img-top {
+    height: 11rem;
+  }
+
+  .category-main #category-filters {
+    flex-basis: 25vw;
+  }
+  .category-main #category-filters .card {
+    top: 5rem;
+  }
+  .category-main #category-filters .price-heading {
+    font-size: 0.7rem;
+  }
+  .category-main #category-filters .price-heading span {
+    font-size: 0.4rem;
+  }
+  .category-main #category-filters .price-heading .btn {
     font-size: 0.65rem;
+  }
+  .category-main #category-filters .rangeM {
+    font-size: 0.65rem;
+  }
+  .category-main #category-filters .form-check {
+    font-size: 0.7rem;
+    margin: 0.7rem 0;
+  }
+  .category-main #category-filters .h-50 {
+    font-size: 0.58rem;
+  }
+  .category-main #category-display {
+    flex-basis: 75vw;
+  }
+  .category-main #category-display .card-header .categoryTitle {
+    font-size: 1rem;
+  }
+  .category-main #category-display .sortBy {
+    font-size: 0.7rem;
+  }
+  .category-main #category-display .sortBy a {
+    font-size: 0.7rem;
+  }
+  .category-main #category-display .mainContent .col-lg-2 {
+    flex-basis: 33%;
+    margin-top: 1.5rem;
+  }
+  .category-main #category-display .mainContent .card-img-top {
+    height: 10rem;
+  }
+  .category-main #category-display .mainContent .card-title {
+    font-size: 0.6rem;
+  }
+  .category-main #category-display .mainContent .card-text {
+    font-size: 0.7rem;
+  }
+  .category-main #category-display .mainContent .action {
+    font-size: 1.15rem;
   }
 }
 @media (max-width: 767.98px) {
-  body {
-    font-size: 0.75rem;
-  }
-  body .to-top {
-    bottom: 16px;
-    right: 13px;
-    width: 37px;
-    height: 37px;
-    font-size: 29px;
-  }
-  body .to-top.active {
-    bottom: 30px;
-  }
-
-  #extraNav {
-    font-size: 0.5rem;
+  .navbar #search-nav {
+    font-size: 0.7rem;
   }
 
   #favs .modal-title {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
   #favs .prod-title {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   #favs .img-thumbnail {
     height: 5rem;
     width: 5rem;
   }
   #favs .price {
-    font-size: 0.6rem;
+    font-size: 1rem;
     font-weight: 600;
   }
   #favs span {
-    font-size: 0.45rem;
+    font-size: 0.7rem;
   }
   #favs .remove {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   #favs .favs-footer {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
   #cart .modal-title {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
   }
   #cart .prod-title {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   #cart .img-thumbnail {
     height: 5rem;
     width: 5rem;
   }
   #cart .price {
-    font-size: 0.6rem;
+    font-size: 1rem;
     font-weight: 600;
   }
   #cart span {
-    font-size: 0.45rem;
+    font-size: 0.5rem;
   }
   #cart .form-select {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   #cart .remove {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
   #cart .total {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   #cart #checkout {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
   #tiles {
     margin-top: 1rem;
   }
+  #tiles .image-tile {
+    height: 7rem;
+  }
   #tiles .card-footer {
-    text-transform: initial;
+    font-size: 0.88rem;
   }
 
   #why {
     margin-top: 1rem;
   }
   #why .why-title {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   #why h5 {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   #why i {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   #why p {
     margin: 0.2rem 0;
-    font-size: 0.45rem;
+    font-size: 0.9rem;
   }
   #why span {
-    font-size: 0.3rem;
+    font-size: 0.7rem;
   }
 
+  .featured .section-title {
+    margin-bottom: 1rem;
+    Font-size: 1.2rem;
+  }
+  .featured .section-title:after {
+    height: 2px;
+    width: 20px;
+  }
+  .featured .see-all {
+    font-size: 0.7rem;
+    text-transform: initial;
+  }
+  .featured .card {
+    margin-bottom: 1rem;
+  }
   .featured .card-img-top {
-    height: 7rem;
+    height: 11rem;
+  }
+  .featured .card-title {
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+  .featured .card-text {
+    font-size: 0.7rem;
+  }
+  .featured span {
+    font-size: 0.55rem;
+  }
+  .featured .action {
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
   }
 
   #product-view .modal-title {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   #product-view #prod-main-img {
     height: 20rem;
@@ -1247,7 +1417,7 @@ body .to-top.active {
   }
   #product-view #prod-price {
     margin-top: 1rem;
-    font-size: 0.85rem;
+    font-size: 1.2rem;
     font-weight: 650;
   }
   #product-view #prod-price span {
@@ -1257,81 +1427,80 @@ body .to-top.active {
     justify-content: space-evenly;
   }
   #product-view .count .form-control {
-    width: 5rem;
-    font-size: 0.55rem;
+    width: 7rem;
+    font-size: 0.9rem;
   }
   #product-view .count .count-sub {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
   #product-view .count span {
-    font-size: 0.45rem;
+    font-size: 0.65rem;
   }
   #product-view .prod-start {
-    width: 5rem;
-    font-size: 0.55rem;
+    width: 7rem;
+    font-size: 1rem;
   }
   #product-view .checkout {
-    font-size: 0.55rem;
+    font-size: 1rem;
   }
   #product-view #share {
     margin-top: 1rem;
   }
   #product-view #share .fab {
-    padding: 0.3rem;
-    font-size: 1rem;
-    width: 1.6rem;
+    padding: 0.8rem;
+    font-size: 1.7rem;
+    width: 3.3rem;
   }
   #product-view .scroll {
     font-size: 0.6rem;
   }
   #product-view .description {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   #product-view .bullets {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
 
   #footer .footer1 .info-heading {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     margin-left: 0;
     text-align: center;
   }
   #footer .footer1 .info-list {
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
   #footer .footer1 li {
     display: inline-block;
     width: 49%;
-    font-size: 0.55rem;
+    font-size: 0.8rem;
   }
   #footer .footer1 p {
     margin-bottom: 0.3rem;
   }
   #footer .footer1 #reach {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   #footer .footer1 .phone {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   #footer .footer1 .fab {
-    padding: 0.6rem;
-    font-size: 1.5rem;
-    width: 3rem;
+    padding: 0.8rem;
+    font-size: 1.7rem;
+    width: 3.3rem;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
   }
   #footer .footer1 .reg {
-    width: 6rem;
+    width: 7rem;
     margin-top: 0.3rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   #footer .footer2 {
-    font-size: 0.45rem;
+    font-size: 0.6rem;
   }
 
   #checkout-body {
-    background: #f4f4f4;
     display: flex;
     flex-wrap: wrap-reverse;
   }
@@ -1341,17 +1510,24 @@ body .to-top.active {
   #checkout-body #checkout-main .card {
     margin-bottom: 1.5rem;
   }
+  #checkout-body #checkout-main .card-header {
+    font-size: 1.2rem;
+  }
+  #checkout-body #checkout-main label {
+    font-size: 0.9rem;
+  }
   #checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
   }
   #checkout-body #checkout-main .optional {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   #checkout-body #checkout-main #add-num {
-    font-size: 0.55rem;
+    font-size: 0.75rem;
   }
   #checkout-body #checkout-main .final-text {
     font-weight: bold;
+    font-size: 0.9rem;
   }
   #checkout-body #checkout-main .final-price {
     font-weight: bold;
@@ -1384,7 +1560,7 @@ body .to-top.active {
     height: 4rem;
   }
   #checkout-body #checkout-sidebar .cart-details {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   #checkout-body #checkout-sidebar .checkoutItemName {
     overflow: hidden;
@@ -1396,113 +1572,89 @@ body .to-top.active {
     color: rgba(0, 0, 0, 0.5);
   }
   #checkout-body #checkout-sidebar .btn-sm {
-    font-size: 0.75rem;
-  }
-}
-@media (max-width: 575.98px) {
-  body {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
-  .navbar .dropdown-menu {
-    font-size: 0.7rem;
+  .tp .row {
+    margin-top: 1rem;
+    padding: 0;
   }
-  .navbar #search-nav {
-    font-size: 0.7rem;
-  }
-
-  #tiles .image-tile {
-    height: 5rem;
-  }
-  #tiles .card-footer {
-    font-size: 0.5rem;
-    font-weight: 800;
-    text-transform: initial;
-  }
-
-  .featured .section-title {
-    margin-bottom: 1rem;
-    Font-size: 0.9rem;
-    text-transform: initial;
-  }
-  .featured .section-title:after {
-    height: 2px;
-    width: 50px;
-  }
-  .featured .see-all {
-    font-size: 0.4rem;
-    text-transform: initial;
-  }
-  .featured .card {
+  .tp .row .card {
     margin-bottom: 1rem;
   }
-  .featured .card-title {
-    font-size: 0.4rem;
+  .tp .row .card-img-top {
+    height: 11rem;
+  }
+  .tp .row .card-title {
+    font-size: 0.6rem;
     margin-bottom: 0.2rem;
   }
-  .featured .card-text {
-    font-size: 0.4rem;
+  .tp .row .card-text {
+    font-size: 0.7rem;
   }
-  .featured span {
-    font-size: 0.3rem;
-  }
-  .featured .action {
-    margin-top: 0.2rem;
-    font-size: 0.6rem;
-  }
-
-  #checkout-body #checkout-main {
-    margin-top: 1.5rem;
-  }
-  #checkout-body #checkout-main .card {
-    margin-bottom: 1.5rem;
-  }
-  #checkout-body #checkout-main .card-header {
-    font-size: 0.9rem;
-    font-weight: 700;
-  }
-  #checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
-    font-size: 0.6rem;
-  }
-  #checkout-body #checkout-main .optional {
-    font-size: 0.5rem;
-  }
-  #checkout-body #checkout-main #add-num {
+  .tp .row span {
     font-size: 0.55rem;
   }
-  #checkout-body #checkout-main .final-text {
-    font-weight: bold;
+  .tp .row .action {
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
   }
-  #checkout-body #checkout-main .final-price {
-    font-weight: bold;
-    font-size: 0.9rem;
+
+  .category-main {
+    display: flex;
+    flex-wrap: wrap;
   }
-  #checkout-body #checkout-main span {
-    font-size: 0.4rem;
-  }
-  #checkout-body #checkout-main #placeOrder {
-    margin-top: 1rem;
-    font-weight: 700;
-  }
-  #checkout-body #checkout-sidebar {
+  .category-main #category-filters {
     flex-basis: 100vw;
   }
-  #checkout-body #checkout-sidebar #divForHelp {
+  .category-main #category-filters .card {
     position: static;
   }
-  #checkout-body #checkout-sidebar #help-button {
-    width: 6rem;
-    font-size: 0.5rem;
+  .category-main #category-filters .price-heading {
+    font-size: 1rem;
   }
-  #checkout-body #checkout-sidebar .img-fluid {
-    width: 3rem;
-    height: 3rem;
+  .category-main #category-filters .price-heading span {
+    font-size: 0.7rem;
   }
-  #checkout-body #checkout-sidebar .cart-details {
+  .category-main #category-filters .price-heading .btn {
+    font-size: 0.8rem;
+  }
+  .category-main #category-filters .rangeM {
+    font-size: 0.8rem;
+  }
+  .category-main #category-filters .h-50 {
+    font-size: 0.85rem;
+  }
+  .category-main #category-filters .form-check {
+    font-size: 1rem;
+  }
+  .category-main #category-display {
+    margin-top: 2rem;
+    flex-basis: 100vw;
+  }
+  .category-main #category-display .mainContent .card {
+    margin-bottom: 1rem;
+  }
+  .category-main #category-display .mainContent .card-img-top {
+    height: 11rem;
+  }
+  .category-main #category-display .mainContent .card-title {
     font-size: 0.6rem;
+    margin-bottom: 0.2rem;
   }
-  #checkout-body #checkout-sidebar .btn-sm {
-    font-size: 0.5rem;
+  .category-main #category-display .mainContent .card-text {
+    font-size: 0.7rem;
+  }
+  .category-main #category-display .mainContent span {
+    font-size: 0.55rem;
+  }
+  .category-main #category-display .mainContent .action {
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
+  }
+  .category-main #category-display .mainContent .col-lg-2 {
+    flex-basis: 50%;
+    margin-top: 0;
   }
 }
 

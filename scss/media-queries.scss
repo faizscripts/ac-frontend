@@ -52,6 +52,16 @@
     }
   }
 
+  #tiles {
+    .card-footer {
+      font-size: 0.7rem;
+    }
+
+    .image-tile {
+      height: 7rem;
+    }
+  }
+
   .featured {
     .card-title {
       font-size: 0.7rem;
@@ -214,16 +224,98 @@
     }
   }
 
+  .tp {
+    .row {
+
+      .card-img-top {
+        height: 9rem;
+      }
+
+      .card-title {
+        font-size: 0.65rem;
+      }
+
+      .card-text {
+        font-size: 0.6rem;
+
+        span {
+          font-size: 0.5rem;
+        }
+      }
+
+      .action {
+        font-size: 1.15rem;
+      }
+    }
+
+  }
+
+  .category-main {
+    #category-filters {
+      .h-50 {
+        font-size: 0.64rem;
+      }
+    }
+
+    #category-display {
+      .categoryTitle {
+        font-size: 1.2rem;
+      }
+
+      .mainContent {
+
+        .col-lg-2 {
+          flex-basis: 25%;
+          margin-top: 1.5rem;
+        }
+
+        .card-img-top {
+          height: 10.5rem;
+        }
+
+        .card-title {
+          font-size: 0.7rem;
+        }
+
+        span {
+          font-size: 0.6rem;
+        }
+
+        .action {
+          font-size: 1.35rem;
+        }
+
+      }
+    }
+  }
+
 }
 
 
 // medium
 @media (max-width: 991.98px) {
   body {
-    font-size: 0.85rem;
+    //   Back to top
+    .to-top {
+      bottom: 20px;
+      right: 15px;
+      width: 60px;
+      height: 60px;
+      font-size: 45px;
+    }
+
+    .to-top.active {
+      bottom: 30px;
+    }
   }
 
   .navbar {
+    font-size: 1rem;
+    top: -5px;
+
+    .container-fluid {
+      padding-top: 10px;
+    }
 
     #logo {
       width: 125px;
@@ -259,8 +351,12 @@
   }
 
   #favs {
+    .modal-title {
+      font-size: 1.2rem;
+    }
+
     .prod-title {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
     .img-thumbnail {
@@ -269,29 +365,30 @@
     }
 
     .price {
+      font-size: 1rem;
       font-weight: 600;
     }
 
     span {
-      font-size: 0.6rem;
-    }
-
-    .form-select {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
 
     .remove {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
 
     .favs-footer {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   }
 
   #cart {
+    .modal-title {
+      font-size: 1.2rem;
+    }
+
     .prod-title {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
     .img-thumbnail {
@@ -300,6 +397,7 @@
     }
 
     .price {
+      font-size: 1rem;
       font-weight: 600;
     }
 
@@ -307,7 +405,8 @@
       font-size: 0.6rem;
     }
 
-    .form-select {
+    .qty {
+      width: 5rem;
       font-size: 0.7rem;
     }
 
@@ -324,15 +423,25 @@
     }
   }
 
+  #tiles {
+    .image-tile {
+      height: 10rem;
+    }
+
+    .card-footer {
+      font-size: 0.9rem;
+    }
+  }
+
   #why {
 
     p {
       margin-top: 0.5rem;
-      font-size: 0.6rem;
+      font-size: 0.9rem;
     }
 
     span {
-      font-size: 0.4rem;
+      font-size: 0.6rem;
     }
   }
 
@@ -351,7 +460,7 @@
     }
 
     .card-img-top {
-      height: 14rem;
+      height: 12rem;
     }
 
     span {
@@ -363,7 +472,7 @@
   #product-view {
 
     .modal-title {
-      font-size: 0.85rem;
+      font-size: 1rem;
     }
 
     #prod-main-img {
@@ -380,11 +489,11 @@
     }
 
     #prod-price {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       font-weight: 650;
 
       span {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
       }
     }
 
@@ -396,7 +505,7 @@
       }
 
       .count-sub {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding-top: 0.2rem;
       }
 
@@ -411,7 +520,7 @@
     }
 
     .checkout {
-      font-size: 0.5rem;
+      font-size: 0.6rem;
     }
 
     #share {
@@ -431,7 +540,7 @@
     }
 
     .bullets {
-      font-size: 0.6rem;
+      font-size: 0.7rem;
     }
 
   }
@@ -441,26 +550,26 @@
     .footer1 {
 
       .info-heading {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
 
       li {
-        font-size: 0.7rem;
+        font-size: 0.85rem;
       }
 
       #reach {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
 
       .phone {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
       }
 
 
       .fab {
         padding: 0.6rem;
         font-size: 1.5rem;
-        width: 3rem;
+        width: 2.7rem;
         text-align: center;
         text-decoration: none;
         border-radius: 50%;
@@ -487,43 +596,43 @@
       margin-top: 2rem;
 
       .card-header {
+        font-size: 1rem;
+      }
+
+      label {
         font-size: 0.9rem;
       }
 
-      label{
-        font-size: 0.7rem;
-      }
-
       input[placeholder], textarea[placeholder], select, option, .form-check-label {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
       }
 
       .optional {
-        font-size: 0.55rem;
+        font-size: 0.6rem;
       }
 
-      #add-num{
-        font-size: 0.6rem;
+      #add-num {
+        font-size: 0.7rem;
 
       }
 
       .final-text {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         font-weight: bold;
       }
 
       .final-price {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
         font-weight: bold;
       }
 
       span {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
       }
 
 
       #placeOrder {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         width: 15rem;
         font-weight: 700;
       }
@@ -533,16 +642,16 @@
       flex-basis: 35vw;
       margin-top: 2rem;
 
-      #divForHelp{
+      #divForHelp {
         top: 5rem;
       }
 
       #help-button {
         width: 10rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
 
-      .card{
+      .card {
         top: 8.5rem;
       }
 
@@ -551,15 +660,121 @@
         height: 3rem;
       }
 
+      .card-header {
+        font-size: 0.9rem;
+      }
+
       .cart-details {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
       }
 
 
       .btn-sm {
+        font-size: 0.7rem;
+      }
+
+    }
+  }
+
+  .tp {
+    .card-header {
+      font-size: 1rem;
+    }
+
+    .card-body {
+      padding-top: 0;
+    }
+
+    .row {
+      .col-4 {
+        margin-top: 1rem;
+      }
+
+      .card-img-top {
+        height: 11rem;
+      }
+    }
+
+  }
+
+  .category-main {
+
+    #category-filters {
+      flex-basis: 25vw;
+
+      .card {
+        top: 5rem;
+      }
+
+
+      .price-heading {
+        font-size: 0.7rem;
+
+        span {
+          font-size: 0.4rem;
+        }
+
+        .btn {
+          font-size: 0.65rem;
+        }
+      }
+
+      .rangeM {
         font-size: 0.65rem;
       }
 
+      .form-check {
+        font-size: 0.7rem;
+        margin: 0.7rem 0;
+      }
+
+      .h-50 {
+        font-size: 0.58rem;
+      }
+    }
+
+    #category-display {
+      flex-basis: 75vw;
+
+      .card-header {
+        .categoryTitle {
+          font-size: 1rem;
+        }
+      }
+
+      .sortBy {
+        font-size: 0.7rem;
+
+        a {
+          font-size: 0.7rem;
+        }
+      }
+
+      .mainContent {
+
+        .col-lg-2 {
+          flex-basis: 33%;
+          margin-top: 1.5rem;
+        }
+
+        .card-img-top {
+          height: 10rem;
+        }
+
+        .card-title {
+          font-size: 0.6rem;
+        }
+
+        .card-text {
+          font-size: 0.7rem;
+        }
+
+        .action {
+          font-size: 1.15rem;
+        }
+
+
+      }
     }
   }
 }
@@ -567,36 +782,21 @@
 
 // small
 @media (max-width: 767.98px) {
-  body {
-    font-size: 0.75rem;
 
-    //   Back to top
-    .to-top {
-      bottom: 16px;
-      right: 13px;
-      width: 37px;
-      height: 37px;
-      font-size: 29px;
+  .navbar {
+    #search-nav {
+      font-size: 0.70rem;
     }
-
-    .to-top.active {
-      bottom: 30px;
-    }
-  }
-
-  // Extra Navbar
-  #extraNav{
-    font-size: 0.5rem;
   }
 
   #favs {
 
     .modal-title {
-      font-size: 0.7rem;
+      font-size: 1.2rem;
     }
 
     .prod-title {
-      font-size: 0.5rem;
+      font-size: 1rem;
     }
 
     .img-thumbnail {
@@ -605,31 +805,31 @@
     }
 
     .price {
-      font-size: 0.6rem;
+      font-size: 1rem;
       font-weight: 600;
     }
 
     span {
-      font-size: 0.45rem;
+      font-size: 0.7rem;
     }
 
     .remove {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
     }
 
     .favs-footer {
-      font-size: 0.6rem;
+      font-size: 1rem;
     }
   }
 
   #cart {
 
     .modal-title {
-      font-size: 0.7rem;
+      font-size: 1.2rem;
     }
 
     .prod-title {
-      font-size: 0.5rem;
+      font-size: 1rem;
     }
 
     .img-thumbnail {
@@ -638,36 +838,40 @@
     }
 
     .price {
-      font-size: 0.6rem;
+      font-size: 1rem;
       font-weight: 600;
     }
 
     span {
-      font-size: 0.45rem;
+      font-size: 0.5rem;
     }
 
     .form-select {
-      font-size: 0.5rem;
+      font-size: 1rem;
     }
 
     .remove {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
     }
 
     .total {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
     }
 
     #checkout {
-      font-size: 0.6rem;
+      font-size: 1rem;
     }
   }
 
   #tiles {
     margin-top: 1rem;
 
+    .image-tile {
+      height: 7rem;
+    }
+
     .card-footer {
-      text-transform: initial;
+      font-size: 0.88rem;
     }
   }
 
@@ -675,38 +879,53 @@
     margin-top: 1rem;
 
     .why-title {
-      font-size: 0.9rem;
+      font-size: 1.2rem;
     }
 
     h5 {
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
 
     i {
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
 
     p {
       margin: 0.2rem 0;
-      font-size: 0.45rem;
+      font-size: 0.9rem;
     }
 
     span {
-      font-size: 0.3rem;
+      font-size: 0.7rem;
     }
 
   }
 
   .featured {
-    .card-img-top {
-      height: 7rem;
+
+    .section-title {
+      margin-bottom: 1rem;
+      Font-size: 1.2rem;
     }
+
+    .section-title:after {
+      height: 2px;
+      width: 20px;
+    }
+
+    .see-all {
+      font-size: 0.7rem;
+      text-transform: initial;
+    }
+
+    @include smallFeaturedCards;
+
   }
 
   #product-view {
 
     .modal-title {
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
 
     #prod-main-img {
@@ -724,7 +943,7 @@
 
     #prod-price {
       margin-top: 1rem;
-      font-size: 0.85rem;
+      font-size: 1.2rem;
       font-weight: 650;
 
       span {
@@ -737,35 +956,35 @@
 
 
       .form-control {
-        width: 5rem;
-        font-size: 0.55rem;
+        width: 7rem;
+        font-size: 0.9rem;
       }
 
       .count-sub {
-        font-size: 0.85rem;
+        font-size: 1.2rem;
       }
 
       span {
-        font-size: 0.45rem;
+        font-size: 0.65rem;
       }
     }
 
     .prod-start {
-      width: 5rem;
-      font-size: 0.55rem;
+      width: 7rem;
+      font-size: 1rem;
     }
 
     .checkout {
-      font-size: 0.55rem;
+      font-size: 1rem;
     }
 
     #share {
       margin-top: 1rem;
 
       .fab {
-        padding: 0.3rem;
-        font-size: 1rem;
-        width: 1.6rem;
+        padding: 0.8rem;
+        font-size: 1.7rem;
+        width: 3.3rem;
       }
     }
 
@@ -774,11 +993,11 @@
     }
 
     .description {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
     }
 
     .bullets {
-      font-size: 0.6rem;
+      font-size: 0.9rem;
     }
 
   }
@@ -788,19 +1007,19 @@
     .footer1 {
 
       .info-heading {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         margin-left: 0;
         text-align: center;
       }
 
       .info-list {
-        font-size: 0.6rem;
+        font-size: 1rem;
       }
 
       li {
         display: inline-block;
         width: 49%;
-        font-size: 0.55rem;
+        font-size: 0.8rem;
       }
 
       p {
@@ -808,18 +1027,18 @@
       }
 
       #reach {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
       }
 
       .phone {
-        font-size: 0.7rem;
+        font-size: 1rem;
       }
 
 
       .fab {
-        padding: 0.6rem;
-        font-size: 1.5rem;
-        width: 3rem;
+        padding: 0.8rem;
+        font-size: 1.7rem;
+        width: 3.3rem;
         text-align: center;
         text-decoration: none;
         border-radius: 50%;
@@ -827,61 +1046,69 @@
       }
 
       .reg {
-        width: 6rem;
+        width: 7rem;
         margin-top: 0.3rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
 
     }
 
     .footer2 {
-      font-size: 0.45rem;
+      font-size: 0.6rem;
     }
 
   }
 
-  #checkout-body{
-    background: $grey;
+  #checkout-body {
     display: flex;
     flex-wrap: wrap-reverse;
 
-    #checkout-main{
+    #checkout-main {
       flex-basis: 100vw;
 
       .card {
         margin-bottom: 1.5rem;
       }
 
-      input[placeholder], textarea[placeholder], select, option, .form-check-label{
-        font-size: 0.65rem;
+      .card-header {
+        font-size: 1.2rem;
+      }
+
+      label {
+        font-size: 0.9rem;
+      }
+
+      input[placeholder], textarea[placeholder], select, option, .form-check-label {
+        font-size: 0.8rem;
       }
 
 
-      .optional{
-        font-size: 0.5rem;
+      .optional {
+        font-size: 0.7rem;
       }
 
 
-      #add-num{
-        font-size: 0.55rem;
+      #add-num {
+        font-size: 0.75rem;
       }
 
-      .final-text{
+      .final-text {
         font-weight: bold;
+        font-size: 0.9rem;
       }
 
-      .final-price{
+      .final-price {
         font-weight: bold;
         font-size: 1rem;
       }
 
-      span{
+      span {
         text-transform: lowercase;
         font-weight: normal;
       }
 
 
-      #placeOrder{
+      #placeOrder {
         margin-top: 1rem;
         //width: 30rem;
         font-weight: 700;
@@ -893,197 +1120,110 @@
       margin-top: 1rem;
 
 
-      #divForHelp{
+      #divForHelp {
         position: static;
       }
 
-      #help-button{
+      #help-button {
         width: 8rem;
         font-weight: 700;
       }
 
-      .card{
+      .card {
         position: static;
 
       }
 
 
-      .img-fluid{
+      .img-fluid {
         width: 5rem;
         height: 4rem;
       }
 
-      .cart-details{
-        font-size: 0.8rem;
+      .cart-details {
+        font-size: 0.9rem;
       }
 
-      .checkoutItemName{
+      .checkoutItemName {
         overflow: hidden;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
       }
 
-      hr{
+      hr {
         color: rgba(0, 0, 0, 0.5);
       }
 
-      .btn-sm{
-        font-size: 0.75rem;
-      }
-
-    }
-  }
-}
-
-
-// xs
-@media (max-width: 575.98px) {
-  body {
-    font-size: 0.7rem;
-  }
-
-  .navbar {
-
-    .dropdown-menu {
-      font-size: 0.70rem;
-    }
-
-    #search-nav {
-      font-size: 0.70rem;
-    }
-  }
-
-  #tiles {
-
-    .image-tile {
-      height: 5rem;
-    }
-
-    .card-footer {
-      font-size: 0.5rem;
-      font-weight: 800;
-      text-transform: initial;
-    }
-  }
-
-  .featured {
-
-    .section-title {
-      margin-bottom: 1rem;
-      Font-size: 0.9rem;
-      text-transform: initial;
-    }
-
-    .section-title:after {
-      height: 2px;
-      width: 50px;
-    }
-
-    .see-all {
-      font-size: 0.4rem;
-      text-transform: initial;
-    }
-
-    .card {
-      margin-bottom: 1rem;
-    }
-
-    .card-title {
-      font-size: 0.4rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .card-text {
-      font-size: 0.4rem;
-    }
-
-    span {
-      font-size: 0.3rem;
-    }
-
-    .action {
-      margin-top: 0.2rem;
-      font-size: 0.6rem;
-    }
-
-  }
-
-  #checkout-body{
-
-    #checkout-main{
-      margin-top: 1.5rem;
-
-      .card {
-        margin-bottom: 1.5rem;
-      }
-
-      .card-header{
-        font-size: 0.9rem;
-        font-weight: 700;
-      }
-
-      input[placeholder], textarea[placeholder], select, option, .form-check-label{
-        font-size: 0.6rem;
-      }
-
-
-      .optional{
-        font-size: 0.5rem;
-      }
-
-
-      #add-num{
-        font-size: 0.55rem;
-      }
-
-      .final-text{
-        font-weight: bold;
-      }
-
-      .final-price{
-        font-weight: bold;
+      .btn-sm {
         font-size: 0.9rem;
       }
 
-      span{
-        font-size: 0.4rem;
-      }
+    }
+  }
 
+  .tp {
 
-      #placeOrder{
-        margin-top: 1rem;
-        font-weight: 700;
-      }
+    .row {
+      margin-top: 1rem;
+      padding: 0;
+      @include smallFeaturedCards;
     }
 
-    #checkout-sidebar {
+  }
+
+  .category-main {
+    display: flex;
+    flex-wrap: wrap;
+
+    #category-filters {
       flex-basis: 100vw;
 
-
-      #divForHelp{
+      .card{
         position: static;
       }
 
-      #help-button{
-        width: 6rem;
-        font-size: 0.5rem;
+
+      .price-heading{
+        font-size: 1rem;
+
+        span{
+          font-size: 0.7rem;
+        }
+
+        .btn{
+          font-size: 0.8rem;
+        }
       }
 
-
-      .img-fluid{
-        width: 3rem;
-        height: 3rem;
+      .rangeM{
+        font-size: 0.8rem;
       }
 
-      .cart-details{
-        font-size: 0.6rem;
+      .h-50 {
+        font-size: 0.85rem;
       }
 
-      .btn-sm{
-        font-size: 0.5rem;
+      .form-check{
+        font-size: 1rem;
       }
 
     }
+
+    #category-display {
+      margin-top: 2rem;
+      flex-basis: 100vw;
+
+      .mainContent{
+        @include smallFeaturedCards;
+
+        .col-lg-2{
+          flex-basis: 50%;
+          margin-top: 0;
+        }
+      }
+    }
   }
 }
+
+

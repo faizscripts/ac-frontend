@@ -75,6 +75,7 @@
                         Categories
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Find By Device</a></li>
                         <li><a class="dropdown-item" href="#">Brands</a></li>
                         <li><a class="dropdown-item" href="#">Cases</a></li>
                         <li><a class="dropdown-item" href="#">Power</a></li>
@@ -113,12 +114,12 @@
             <div class="card-body">
                 <form>
                     <div class="row">
-                        <div class="mb-3 col form-group ">
+                        <div class="mb-3 col-md-6 form-group ">
                             <label for="firstName" class="form-label" required>First Name</label>
                             <input type="text" class="form-control" id="firstName" aria-describedby="first name"
                                    placeholder="Faiz">
                         </div>
-                        <div class="mb-3 col form-group">
+                        <div class="mb-3 col-md-6 form-group">
                             <label for="lastName" class="form-label" required>Last Name</label>
                             <input type="text" class="form-control" id="lastName" aria-describedby="last name"
                                    placeholder="Ahmed">
@@ -140,6 +141,8 @@
                 </form>
             </div>
         </div>
+
+        <!--        Shipping Address-->
         <div class="card">
             <div class="card-header">
                 Shipping Address
@@ -150,18 +153,17 @@
                         <label for="county" class="form-label" required="">County</label>
                         <select class="form-select mb-3" aria-label="Select County" id="county">
                             <option selected>Nairobi</option>
-                            <option value="nairobi">Nairobi</option>
                             <option value="mombasa">Mombasa</option>
                             <option value="kisumu">Kisumu</option>
                         </select>
                     </div>
                     <div class="row">
-                        <div class="mb-3 col form-group">
+                        <div class="mb-3 col-md-6 form-group">
                             <label for="town" class="form-label" required>Town/ City</label>
                             <input type="text" class="form-control" id="town" aria-describedby="town"
                                    placeholder="e.g Embakasi, Kasarani etc.">
                         </div>
-                        <div class="mb-3 col form-group">
+                        <div class="mb-3 col-md-6 form-group">
                             <label for="street" class="form-label" required>Street Address</label>
                             <input type="text" class="form-control" id="street" aria-describedby="street"
                                    placeholder="Estate/ Building/ Floor">
@@ -348,6 +350,23 @@
                     </div>
                     <hr class="mt-2">
                 </div>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/home/featured/3.jpg" alt="" class="img-thumbnail">
+                    </div>
+                    <div class="col-9">
+                        <h5 class="prod-title">Nillkin Flex PURE Pro MagSafe cover case</h5>
+                        <div class="mt-3 mt-lg-4">
+                            <div class="price"><span>  ksh.</span> 800</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3 mt-lg-4">
+                            <div class="remove btn btn-sm btn-outline-success">Add to cart <i class="bi bi-cart3"></i>
+                            </div>
+                            <div class="remove btn btn-sm btn-outline-danger">Remove <i class="bi bi-trash"></i></div>
+                        </div>
+                    </div>
+                    <hr class="mt-2">
+                </div>
             </div>
             <div class="modal-footer d-flex justify-content-between">
                 <button type="button" class="btn btn-success favs-footer">Add all to cart</button>
@@ -374,19 +393,7 @@
                         <h5 class="prod-title">Nillkin Flex PURE Pro MagSafe cover case</h5>
                         <div class="d-flex justify-content-between mt-3 mt-lg-4">
                             <div>
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>Quantity</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="3">4</option>
-                                    <option value="3">5</option>
-                                    <option value="3">6</option>
-                                    <option value="3">7</option>
-                                    <option value="3">8</option>
-                                    <option value="3">9</option>
-                                    <option value="3">10</option>
-                                </select>
+                                <input type="number" placeholder="Quantity" class="form-control qty">
                             </div>
                             <div class="price"><span>  ksh.</span> 1200</div>
                         </div>
@@ -405,19 +412,7 @@
                         <h5 class="prod-title">Nillkin Textured nylon fiber case for Apple iPhone 12 Mini</h5>
                         <div class="d-flex justify-content-between mt-3 mt-lg-4">
                             <div>
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>Quantity</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="3">4</option>
-                                    <option value="3">5</option>
-                                    <option value="3">6</option>
-                                    <option value="3">7</option>
-                                    <option value="3">8</option>
-                                    <option value="3">9</option>
-                                    <option value="3">10</option>
-                                </select>
+                                <input type="number" placeholder="Quantity" class="form-control qty">
                             </div>
                             <div class="price"><span>  ksh</span> 800</div>
                         </div>
@@ -431,7 +426,9 @@
             </div>
             <div class="modal-footer d-flex justify-content-between">
                 <div>Total (ksh): <span class="total">3250</span></div>
-                <button type="button" class="btn btn-success" id="checkout">Checkout</button>
+                <button type="button" class="btn btn-success" id="checkout" onclick="location.href='checkout.html'">
+                    Checkout
+                </button>
             </div>
         </div>
     </div>
@@ -497,7 +494,9 @@
                                             class="bi bi-cart3"></i></button>
                                 </div>
                                 <div class="mt-2 mt-md-1 mt-lg-2  d-flex justify-content-center">
-                                    <button class="btn btn-success checkout"> Checkout</button>
+                                    <button class="btn btn-success checkout" onclick="location.href='checkout.html'">
+                                        Checkout
+                                    </button>
                                 </div>
                             </div>
                             <div id="share" class="text-center">

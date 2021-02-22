@@ -51,7 +51,7 @@
 
   span {
     margin-left: 0.2rem;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: normal;
     text-decoration: line-through $red;
   }
@@ -70,5 +70,34 @@
 
   .bi{
     @include pointer;
+  }
+}
+
+
+@mixin smallFeaturedCards {
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .card-img-top{
+    height: 11rem;
+  }
+
+  .card-title {
+    font-size: 0.6rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .card-text {
+    font-size: 0.7rem;
+  }
+
+  span {
+    font-size: 0.55rem;
+  }
+
+  .action {
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
   }
 }
