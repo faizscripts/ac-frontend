@@ -796,7 +796,8 @@ body {
   place-items: center;
 
   .card{
-    margin-top: 2rem;
+    margin-top: 4rem;
+    width: 50%;
   }
 
   .card-header {
@@ -813,8 +814,8 @@ body {
     font-size: 0.93rem;
   }
 
-  input[placeholder] {
-    font-size: 0.85rem;
+  input[placeholder], textarea[placeholder], select, option, .form-check-label {
+    font-size: 0.83rem;
   }
 
   p{

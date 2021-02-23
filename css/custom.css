@@ -766,7 +766,8 @@ body .to-top.active {
   place-items: center;
 }
 .register .card {
-  margin-top: 2rem;
+  margin-top: 4rem;
+  width: 50%;
 }
 .register .card-header {
   background: white;
@@ -782,8 +783,8 @@ body .to-top.active {
 .register label {
   font-size: 0.93rem;
 }
-.register input[placeholder] {
-  font-size: 0.85rem;
+.register input[placeholder], .register textarea[placeholder], .register select, .register option, .register .form-check-label {
+  font-size: 0.83rem;
 }
 .register p {
   font-size: 0.7rem;
@@ -1340,6 +1341,10 @@ body .to-top.active {
   .findByFilter .input-group input {
     font-size: 0.5rem;
   }
+
+  .register .card {
+    width: 75%;
+  }
 }
 @media (max-width: 767.98px) {
   .navbar #search-nav {
@@ -1726,6 +1731,10 @@ body .to-top.active {
   }
   .findByFilter .input-group i {
     font-size: 0.8rem;
+  }
+
+  .register .card {
+    width: 95%;
   }
 }
 
