@@ -830,5 +830,29 @@ body {
 }
 
 
+#order{
+  width: 80%;
+
+  thead{
+    text-transform: uppercase;
+  }
+
+
+  .itemsTh{
+    //min-width: 20rem;
+  }
+
+  td{
+    font-size: 0.9rem;
+  }
+
+  .btn{
+    width: 8rem;
+    font-size: 0.8rem;
+  }
+
+}
+
+
 @import "media-queries";
 

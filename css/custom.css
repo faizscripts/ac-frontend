@@ -795,6 +795,20 @@ body .to-top.active {
   color: black;
 }
 
+#order {
+  width: 80%;
+}
+#order thead {
+  text-transform: uppercase;
+}
+#order td {
+  font-size: 0.9rem;
+}
+#order .btn {
+  width: 8rem;
+  font-size: 0.8rem;
+}
+
 @media (max-width: 1199.98px) {
   body {
     font-size: 0.85rem;
@@ -990,6 +1004,10 @@ body .to-top.active {
   }
   .category-main #category-display .mainContent .action {
     font-size: 1.35rem;
+  }
+
+  #order {
+    width: 95%;
   }
 }
 @media (max-width: 991.98px) {
@@ -1344,6 +1362,26 @@ body .to-top.active {
 
   .register .card {
     width: 75%;
+  }
+
+  #order {
+    width: 99%;
+  }
+  #order .card-body {
+    margin-right: 0.7rem;
+  }
+  #order .itemsTh {
+    min-width: 25rem;
+  }
+  #order .status {
+    min-width: 8rem;
+  }
+  #order td {
+    font-size: 0.8rem;
+  }
+  #order .btn {
+    width: 7rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 767.98px) {

@@ -289,6 +289,11 @@
     }
   }
 
+  #order{
+    width: 95%;
+
+  }
+
 }
 
 
@@ -793,6 +798,32 @@
     .card{
       width: 75%;
     }
+  }
+
+  #order{
+    width: 99%;
+
+    .card-body{
+      margin-right: 0.7rem;
+    }
+
+    .itemsTh{
+      min-width: 25rem;
+    }
+
+    .status{
+      min-width: 8rem;
+    }
+
+    td{
+      font-size: 0.8rem;
+    }
+
+    .btn{
+      width: 7rem;
+      font-size: 0.7rem;
+    }
+
   }
 }
 
