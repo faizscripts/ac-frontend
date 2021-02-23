@@ -28,10 +28,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 
-    <title>Checkout | Amazon Cellular</title>
+    <title>Register | Amazon Cellular</title>
 </head>
 <body>
-
 
 <!--Pre Loader-->
 <div class="loader">
@@ -103,203 +102,50 @@
     </div>
 </nav>
 
-<!--Checkout-->
-<div id="checkout-body" class="container-fluid">
-    <!--    Main Content-->
-    <div id="checkout-main" class="container-fluid">
-        <!--        Contact-->
-        <div class="card">
-            <div class="card-header">
-                Contact Information
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="row">
-                        <div class="mb-3 col-md-6 form-group ">
-                            <label for="firstName" class="form-label" required>First Name</label>
-                            <input type="text" class="form-control" id="firstName" aria-describedby="first name"
-                                   placeholder="Faiz">
-                        </div>
-                        <div class="mb-3 col-md-6 form-group">
-                            <label for="lastName" class="form-label" required>Last Name</label>
-                            <input type="text" class="form-control" id="lastName" aria-describedby="last name"
-                                   placeholder="Ahmed">
-                        </div>
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label for="email" class="form-label" required>Email Address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                               placeholder="someone@gmail.com">
-                    </div>
-                    <div class="mb-3 form-group">
-                        <label for="phone" class="form-label" required>Phone Number</label>
-                        <input type="number" class="form-control" id="phone" aria-describedby="phone number"
-                               placeholder="0712345678">
-                        <div id="add-num" class="form-text my-1"><i class="fas fa-plus-circle"></i> Add another number
-                        </div>
-                        <div class="anotherNumber"></div>
-                    </div>
-                </form>
-            </div>
+<!--Register-->
+<section class="register">
+    <div class="card">
+        <div class="card-header">
+            Register
         </div>
-
-        <!--        Shipping Address-->
-        <div class="card">
-            <div class="card-header">
-                Shipping Address
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="form-group">
-                        <label for="county" class="form-label" required="">County</label>
-                        <select class="form-select mb-3" aria-label="Select County" id="county">
-                            <option selected>Nairobi</option>
-                            <option value="mombasa">Mombasa</option>
-                            <option value="kisumu">Kisumu</option>
-                        </select>
+        <div class="card-body">
+            <form>
+                <div class="row">
+                    <div class="mb-2 col-lg-6 form-group ">
+                        <label for="firstName" class="form-label" required>First Name</label>
+                        <input type="text" class="form-control" id="firstName" aria-describedby="first name"
+                               placeholder="Faiz">
                     </div>
-                    <div class="row">
-                        <div class="mb-3 col-md-6 form-group">
-                            <label for="town" class="form-label" required>Town/ City</label>
-                            <input type="text" class="form-control" id="town" aria-describedby="town"
-                                   placeholder="e.g Embakasi, Kasarani etc.">
-                        </div>
-                        <div class="mb-3 col-md-6 form-group">
-                            <label for="street" class="form-label" required>Street Address</label>
-                            <input type="text" class="form-control" id="street" aria-describedby="street"
-                                   placeholder="Estate/ Building/ Floor">
-                        </div>
+                    <div class="mb-2 col-lg-6 form-group">
+                        <label for="lastName" class="form-label" required>Last Name</label>
+                        <input type="text" class="form-control" id="lastName" aria-describedby="last name"
+                               placeholder="Ahmed">
                     </div>
-                    <div class="mb-3 col form-group">
-                        <label for="notes" class="form-label">Order Notes <span
-                                class="optional">(optional)</span></label>
-                        <textarea id="notes" class="form-control" rows="2"
-                                  placeholder="Special notes for your delivery"></textarea>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!--        Payment Method-->
-        <div class="card">
-            <div class="card-header">
-                Payment Method
-            </div>
-            <div class="card-body">
-                <form>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="paymentMethod" id="cash" checked>
-                        <label class="form-check-label" for="cash">
-                            Cash on delivery
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="paymentMethod" id="mpesa">
-                        <label class="form-check-label" for="mpesa">
-                            Mpesa on delivery
-                        </label>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!--Price-->
-        <div class="card">
-            <div class="card-body">
-                <div class=" d-flex justify-content-between">
-                    <div class="final-text">Subtotal <span>(ksh.)</span></div>
-                    <div class="final-price">4000</div>
                 </div>
-                <div class=" d-flex justify-content-between">
-                    <div class="final-text">Delivery Fee<span>(ksh.)</span></div>
-                    <div class="final-price">500</div>
+                <div class="mb-2 form-group">
+                    <label for="email" class="form-label" required>Email Address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                           placeholder="someone@gmail.com">
                 </div>
-                <div class=" d-flex justify-content-between">
-                    <div class="final-text">Total <span>(ksh.)</span></div>
-                    <div class="final-price">4500</div>
+                <div class="mb-2 form-group">
+                    <label for="phone" class="form-label" required>Phone Number</label>
+                    <input type="number" class="form-control" id="phone" aria-describedby="phone number"
+                           placeholder="0712345678">
                 </div>
-
+                <div class="mb-2 form-group">
+                    <label for="password" class="form-label" required>Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                </div>
                 <div class="text-center">
-                    <div class="btn btn-lg btn-success" id="placeOrder">PLACE ORDER</div>
+                    <button class="mt-1 btn btn-success">SUBMIT</button>
+                    <p class="mt-1">Already have an account? <a href="login.html">Log in here</a></p>
                 </div>
-            </div>
+            </form>
         </div>
-
-    </div>
-
-    <!-- Sidebar -->
-    <div id="checkout-sidebar" class="container-fluid">
-        <div class="text-center" id="divForHelp">
-            <button class="btn btn-warning" id="help-button">NEED HELP?</button>
-        </div>
-
-        <div class="card mt-2 mt-md-4">
-            <div class="card-header ">
-                YOUR CART
-            </div>
-            <div class="card-body">
-                <div class="checkoutCart">
-                    <div class="row">
-                        <div class=" col-3">
-                            <img src="img/home/featured/1.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 cart-details">
-                            <div class="checkoutItemName">
-                                Nillkin CamShield Pro cover case for Apple iPhone 12
-                            </div>
-                            <div class="d-flex justify-content-between mt-2">
-                                <div>ksh. 800</div>
-                                <div>Qty: 4</div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class=" col-3">
-                            <img src="img/home/featured/2.jpg" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 cart-details">
-                            <div class="checkoutItemName">
-                                Nillkin CamShield Pro cover case for Apple iPhone 12
-                            </div>
-                            <div class="d-flex justify-content-between mt-2">
-                                <div>ksh. 1500</div>
-                                <div>Qty: 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class=" col-3">
-                            <img src="img/home/watches.jfif" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-9 cart-details">
-                            <div class="checkoutItemName">
-                                Nillkin CamShield Pro cover case for Apple iPhone 12
-                            </div>
-                            <div class="d-flex justify-content-between mt-2">
-                                <div>ksh. 3000</div>
-                                <div>Qty: 1</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-3">
-                        <button class="btn btn-sm btn-danger" data-bs-toggle="modal"
-                                data-bs-target="#cart">Modify Cart
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Footer-->
-<section id="footer" class="container-fluid px-0">
-    <div class="footer2 text-center p-2">
-        &copy; Amazon Cellular <span id="copyright"> 2021</span>. All Rights Reserved.
     </div>
 </section>
+
+
 
 
 <!--Back to top -->

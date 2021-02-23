@@ -1,13 +1,19 @@
 @import "variables";
 @import "mixins";
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
   background: $grey;
+  font-family: 'Montserrat', sans-serif;
 
   //Pre Loader
   .loader {
@@ -70,7 +76,12 @@ body {
   font-weight: 600;
   padding: 0.3rem 0;
 
+  .clickable {
+    @include pointer;
+  }
+
 }
+
 
 .navbar {
   position: sticky;
@@ -551,9 +562,7 @@ body {
     }
 
 
-    label[required]:after {
-      content: ' *';
-    }
+    @include required;
 
     input[placeholder], textarea[placeholder], select, option, .form-check-label {
       font-size: 0.8rem;
@@ -667,7 +676,7 @@ body {
       @include shadow;
     }
 
-    .card-img-top{
+    .card-img-top {
       height: 11rem;
     }
 
@@ -684,32 +693,32 @@ body {
   #category-filters {
     flex-basis: 20vw;
 
-    .card{
+    .card {
       position: sticky;
       top: 6.2rem;
       z-index: 3;
     }
 
 
-    .price-heading{
+    .price-heading {
       font-weight: 700;
       font-size: 0.8rem;
 
-      span{
+      span {
         font-weight: normal;
         font-size: 0.6rem;
       }
 
-      .btn{
+      .btn {
         font-size: 0.7rem;
       }
     }
 
-    .rangeM{
+    .rangeM {
       font-size: 0.7rem;
     }
 
-    .form-check{
+    .form-check {
       font-size: 0.8rem;
     }
   }
@@ -720,16 +729,17 @@ body {
     .card-header {
       background: white;
 
-      .categoryTitle{
+      .categoryTitle {
         text-transform: uppercase;
         font-size: 1.3rem;
         font-weight: 800;
       }
     }
 
-    .sortBy{
+    .sortBy {
       font-size: 0.8rem;
-      a{
+
+      a {
         text-decoration: none;
         color: black;
         font-size: 0.8rem;
@@ -740,24 +750,24 @@ body {
       padding-top: 0;
     }
 
-    .mainContent{
+    .mainContent {
       @include featuredCards;
       display: flex;
 
-      .col-lg-2{
+      .col-lg-2 {
         flex-basis: 20%;
         margin-top: 1.7rem;
       }
 
-      .card{
+      .card {
         @include shadow;
       }
 
-      .card-img-top{
+      .card-img-top {
         height: 11.5rem;
       }
 
-      .card-title{
+      .card-title {
         font-size: 0.7rem;
       }
 
@@ -766,16 +776,54 @@ body {
 }
 
 
-.findByFilter{
-  .input-group{
+.findByFilter {
+  .input-group {
     margin: 1rem 0;
 
-    input{
+    input {
       font-size: 0.7rem;
     }
 
-    i{
+    i {
       font-size: 0.6rem;
+    }
+  }
+}
+
+
+.register {
+  display: grid;
+  place-items: center;
+
+  .card{
+    margin-top: 2rem;
+  }
+
+  .card-header {
+    background: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  @include required;
+
+  label{
+    font-size: 0.93rem;
+  }
+
+  input[placeholder] {
+    font-size: 0.85rem;
+  }
+
+  p{
+    font-size: 0.7rem;
+
+    a{
+      font-weight: 700;
+      text-decoration: none;
+      color: black;
     }
   }
 }

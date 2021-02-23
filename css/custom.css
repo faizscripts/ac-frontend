@@ -1,10 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   background: #f4f4f4;
+  font-family: "Montserrat", sans-serif;
 }
 body .loader {
   position: fixed;
@@ -58,6 +64,9 @@ body .to-top.active {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.3rem 0;
+}
+#extraNav .clickable:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -488,6 +497,7 @@ body .to-top.active {
 }
 #checkout-body #checkout-main label[required]:after {
   content: " *";
+  color: #FF0000;
 }
 #checkout-body #checkout-main input[placeholder], #checkout-body #checkout-main textarea[placeholder], #checkout-body #checkout-main select, #checkout-body #checkout-main option, #checkout-body #checkout-main .form-check-label {
   font-size: 0.8rem;
@@ -749,6 +759,39 @@ body .to-top.active {
 }
 .findByFilter .input-group i {
   font-size: 0.6rem;
+}
+
+.register {
+  display: grid;
+  place-items: center;
+}
+.register .card {
+  margin-top: 2rem;
+}
+.register .card-header {
+  background: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.register label[required]:after {
+  content: " *";
+  color: #FF0000;
+}
+.register label {
+  font-size: 0.93rem;
+}
+.register input[placeholder] {
+  font-size: 0.85rem;
+}
+.register p {
+  font-size: 0.7rem;
+}
+.register p a {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 1199.98px) {
@@ -1158,6 +1201,7 @@ body .to-top.active {
   }
   #footer .footer2 {
     font-size: 0.65rem;
+    position: static;
   }
 
   #checkout-body #checkout-main {

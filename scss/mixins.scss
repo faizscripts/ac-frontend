@@ -101,3 +101,11 @@
     font-size: 1.3rem;
   }
 }
+
+
+@mixin required {
+  label[required]:after {
+    content: ' *';
+    color: $red;
+  }
+}
