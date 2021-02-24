@@ -826,6 +826,16 @@ body .to-top.active {
   text-align: justify;
 }
 
+#admin {
+  display: flex;
+}
+#admin .sidebar {
+  width: 25vw;
+}
+#admin .mainPanel {
+  width: 75vw;
+}
+
 @media (max-width: 1199.98px) {
   body {
     font-size: 0.85rem;

@@ -869,5 +869,19 @@ body {
 }
 
 
+//admin page styles
+#admin{
+  display: flex;
+
+  .sidebar{
+    width: 25vw;
+  }
+
+  .mainPanel{
+    width: 75vw;
+  }
+}
+
+
 @import "media-queries";
 
