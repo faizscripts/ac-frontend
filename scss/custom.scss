@@ -890,7 +890,7 @@ body {
       margin-top: 3rem;
     }
 
-    a {
+    li {
       font-weight: 600;
       @include pointer;
     }
@@ -926,7 +926,7 @@ body {
 
       .addBtn {
         margin: 0 2rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
 
       .notiCount {
@@ -940,6 +940,10 @@ body {
       .dropdown {
         text-transform: initial;
       }
+
+      .dropdown-menu{
+        font-size: 0.8rem;
+      }
     }
 
     .order {
@@ -951,6 +955,15 @@ body {
         font-weight: 800;
         font-size: 1.2rem;
       }
+
+      td {
+        font-size: 0.9rem;
+      }
+
+      .btn {
+        width: 8rem;
+        font-size: 0.8rem;
+      }
     }
 
     #chartsRow{
@@ -960,8 +973,8 @@ body {
         position: relative;
         margin: auto;
         padding: 1rem;
-        height: 15rem;
-        width: 28rem;
+        height: 200px;
+        width: 390px;
       }
 
     }

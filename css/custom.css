@@ -845,10 +845,10 @@ body .to-top.active {
 #admin .sidebar ul {
   margin-top: 3rem;
 }
-#admin .sidebar a {
+#admin .sidebar li {
   font-weight: 600;
 }
-#admin .sidebar a:hover {
+#admin .sidebar li:hover {
   cursor: pointer;
 }
 #admin .sidebar i {
@@ -873,7 +873,7 @@ body .to-top.active {
 }
 #admin .mainPanel .navbar .addBtn {
   margin: 0 2rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 #admin .mainPanel .navbar .notiCount {
   margin-right: 0.5rem;
@@ -884,6 +884,9 @@ body .to-top.active {
 #admin .mainPanel .navbar .dropdown {
   text-transform: initial;
 }
+#admin .mainPanel .navbar .dropdown-menu {
+  font-size: 0.8rem;
+}
 #admin .mainPanel .order {
   margin: 2rem 1rem;
   width: 97%;
@@ -893,6 +896,13 @@ body .to-top.active {
   font-weight: 800;
   font-size: 1.2rem;
 }
+#admin .mainPanel .order td {
+  font-size: 0.9rem;
+}
+#admin .mainPanel .order .btn {
+  width: 8rem;
+  font-size: 0.8rem;
+}
 #admin .mainPanel #chartsRow {
   margin: 2rem 1rem;
 }
@@ -901,8 +911,8 @@ body .to-top.active {
   position: relative;
   margin: auto;
   padding: 1rem;
-  height: 15rem;
-  width: 28rem;
+  height: 200px;
+  width: 390px;
 }
 #admin .mainPanel #stats {
   margin: 2rem;
@@ -1145,6 +1155,38 @@ body .to-top.active {
 
   #order {
     width: 95%;
+  }
+
+  #admin .mainPanel .navbar .addBtn {
+    font-size: 0.7rem;
+  }
+  #admin .mainPanel .navbar .notiCount {
+    margin-right: 0.5rem;
+  }
+  #admin .mainPanel .navbar .notification {
+    font-size: 1.5rem;
+  }
+  #admin .mainPanel .navbar .dropdown {
+    text-transform: initial;
+  }
+  #admin .mainPanel #chartsRow .chart-container {
+    height: 170px;
+    width: 319px;
+  }
+  #admin .mainPanel #stats .card-title {
+    font-size: 1rem;
+  }
+  #admin .mainPanel #stats .statNum {
+    font-size: 1.2rem;
+  }
+  #admin .mainPanel #stats i {
+    font-size: 2rem;
+  }
+  #admin .mainPanel #stats .percentage {
+    font-size: 1rem;
+  }
+  #admin .mainPanel #stats span {
+    font-size: 0.6rem;
   }
 }
 @media (max-width: 991.98px) {
@@ -1517,6 +1559,91 @@ body .to-top.active {
     font-size: 0.8rem;
   }
   #order .btn {
+    width: 7rem;
+    font-size: 0.7rem;
+  }
+
+  #admin .sidebar li {
+    font-size: 1rem;
+  }
+  #admin .sidebar i {
+    margin-right: 0.5rem;
+  }
+  #admin .sidebar .collapseMenu li {
+    font-weight: normal;
+  }
+  #admin .mainPanel .navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+  #admin .mainPanel .navbar .addBtn {
+    margin: 0;
+    font-size: 1rem;
+  }
+  #admin .mainPanel .navbar .notiCount {
+    margin-right: 0.5rem;
+  }
+  #admin .mainPanel .navbar .dropdown-menu {
+    font-size: 0.9rem;
+  }
+  #admin .mainPanel #chartsRow {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #admin .mainPanel #chartsRow .chart-container {
+    margin: auto;
+    margin-top: 1.2rem;
+    padding: 1rem;
+    height: 250px;
+    width: 470px;
+  }
+  #admin .mainPanel #stats {
+    margin: 2rem;
+  }
+  #admin .mainPanel #stats .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #admin .mainPanel #stats .card {
+    margin-top: 1rem;
+    flex-basis: 12rem;
+  }
+  #admin .mainPanel #stats .statNum {
+    font-size: 2rem;
+  }
+  #admin .mainPanel #stats i {
+    font-size: 2.5rem;
+  }
+  #admin .mainPanel #stats .percentage {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  #admin .mainPanel #stats span {
+    font-size: 0.7rem;
+    color: black;
+    font-weight: normal;
+  }
+  #admin .mainPanel #stats .profit {
+    color: #198754;
+  }
+  #admin .mainPanel #stats .loss {
+    color: #FF0000;
+  }
+  #admin .mainPanel .order {
+    width: 95%;
+  }
+  #admin .mainPanel .order .card-body {
+    margin-right: 0.7rem;
+  }
+  #admin .mainPanel .order .status {
+    min-width: 8rem;
+  }
+  #admin .mainPanel .order td {
+    font-size: 0.8rem;
+  }
+  #admin .mainPanel .order .btn {
     width: 7rem;
     font-size: 0.7rem;
   }
@@ -1910,6 +2037,38 @@ body .to-top.active {
 
   .register .card {
     width: 95%;
+  }
+
+  #admin .mainPanel .order {
+    width: 92%;
+  }
+  #admin .mainPanel .order .card-body {
+    margin-right: 0.7rem;
+  }
+  #admin .mainPanel .order th {
+    min-width: 5rem;
+  }
+  #admin .mainPanel .order .itemsTh {
+    min-width: 20rem;
+  }
+  #admin .mainPanel .order .status {
+    min-width: 10rem;
+  }
+  #admin .mainPanel .order td {
+    font-size: 0.9rem;
+  }
+  #admin .mainPanel .order .btn {
+    width: 7rem;
+    font-size: 0.7rem;
+  }
+  #admin .mainPanel #chartsRow .chart-container {
+    padding: 0;
+    height: 178px;
+    width: 344px;
+  }
+  #admin .mainPanel #stats .card {
+    margin-right: 0;
+    flex-basis: 13rem;
   }
 }
 
