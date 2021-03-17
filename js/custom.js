@@ -19,7 +19,6 @@ window.addEventListener("scroll", () => {
 
 // Copyright year
 let year = new Date().getFullYear();
-
 document.querySelector('#copyright').innerHTML = year;
 
 
